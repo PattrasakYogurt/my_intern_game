@@ -11,22 +11,10 @@ public class GameManager : MonoBehaviour
     public GameObject pauseUI;
     public TextMeshProUGUI timerText;
     public float timeRemaining;
-    [SerializeField] private int keyObtained = 0;
+    public bool isKeyObtainded = false;
+    public int keyObtained = 0;
     [SerializeField] private PlayerController playerController;
-    [SerializeField] private Image keyShadow_Image;
-    [SerializeField] private Image keyShadow_Image2;
-    [SerializeField] private Image keyShadow_Image3;
-    [SerializeField] private Image keyShadow_Image4;
-    [SerializeField] private Image keyShadow_Image5;
-    [SerializeField] private Image keyShadow_Image6;
-    [SerializeField] private Image keyShadow_Image7;
-    [SerializeField] private Image keyObtain_Image;
-    [SerializeField] private Image keyObtain_Image2;
-    [SerializeField] private Image keyObtain_Image3;
-    [SerializeField] private Image keyObtain_Image4;
-    [SerializeField] private Image keyObtain_Image5;
-    [SerializeField] private Image keyObtain_Image6;
-    [SerializeField] private Image keyObtain_Image7;
+    
 
     public static GameManager instance;
 

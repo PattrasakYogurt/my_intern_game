@@ -8,12 +8,11 @@ public class PlayerController : MonoBehaviour
     bool isGrounded;
     private bool isRun = false;
     private bool isCouch = false;
-    private bool isKeyObtained = false;
     private CharacterController characterController;
     private Vector3 velocity;
     [SerializeField] private int currentHealth;
     [SerializeField] private Healthbar healthbar;
-    [SerializeField] private float walkSpeed = 12f;
+    public float walkSpeed = 12f;
     [SerializeField] private float gravity = -9.81f;
     [SerializeField] private float jumpForce = 5f;
     [SerializeField] private Transform groundCheck;
@@ -32,12 +31,24 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         PlayerMove();
-        
+        if(Input.GetKeyDown(KeyCode.H))
+        {
+            TakeDamage(20);
+        }
     }
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthbar.SetHealth(currentHealth);
+    }
+    public void Heal(int healAmount)
+    {
+        currentHealth += healAmount;
+        healthbar.SetHealth(currentHealth);
+    }
+    public void SetSpeed(float newSpeed)
+    {
+        walkSpeed = newSpeed;
     }
     private void PlayerMove()
     {
