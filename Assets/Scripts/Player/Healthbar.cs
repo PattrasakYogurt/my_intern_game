@@ -7,17 +7,6 @@ public class Healthbar : MonoBehaviour
 {
     [SerializeField] private Slider slider;
     [SerializeField] private Image fill;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void SetMaxHealth(int health)
     {
         slider.maxValue = health;
