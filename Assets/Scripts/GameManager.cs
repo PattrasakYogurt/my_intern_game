@@ -25,18 +25,18 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Cursor.visible = true;
-        
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
     void Update()
     {
-        /*
+        
         if(Input.GetKeyUp(KeyCode.Escape))
         {            
-                PauseGame();           
+           PauseGame();           
         }
-        */
+        
     }
     public void DisablePlayer()
     {
@@ -46,27 +46,32 @@ public class GameManager : MonoBehaviour
     {
         playerController.enabled = true;
     }
-    private void PauseGame()
+    public void PauseGame()
     {
         Time.timeScale = 0;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         DisablePlayer();
-        //ShowPauseUI
+        pauseUI.SetActive(true);
     }
-    private void ResumeGame()
+    public void ResumeGame()
     {
         Time.timeScale = 1;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         EnablePlayer();
+        pauseUI.SetActive(false);
     }
-    private void PlayerLoose()
+    public void PlayerLoose()
     {
         DisablePlayer();
+        Time.timeScale = 0;
+        looseUI.SetActive(true);
     }
     private void PlayerWin()
     {
         DisablePlayer();
+        Time.timeScale = 0;
+        winUI.SetActive(true);
     }
 }

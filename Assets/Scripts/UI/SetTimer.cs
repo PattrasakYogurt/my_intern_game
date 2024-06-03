@@ -24,6 +24,7 @@ public class SetTimer : MonoBehaviour
        else if (remainingTime <= 0)
         {
             timerText.color = Color.red;
+            GameManager.instance.PlayerLoose();
         }
        int minutes = Mathf.FloorToInt(remainingTime / 60);
        int seconds = Mathf.FloorToInt(remainingTime % 60);
