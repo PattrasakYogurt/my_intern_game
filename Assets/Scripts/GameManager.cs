@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.Locked;
+        
     }
 
     // Update is called once per frame
