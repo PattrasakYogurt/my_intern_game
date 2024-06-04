@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
         {            
            PauseGame();           
         }
-        if(keyObtained == 7 )
+        if(keyObtained >= 7 )
         {
             isKeyObtainded = true;
         }

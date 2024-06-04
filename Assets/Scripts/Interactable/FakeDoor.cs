@@ -25,6 +25,7 @@ public class FakeDoor : MonoBehaviour, IInteractable
     }
     IEnumerator ShowFindMoreText()
     {
+        
         findKeyMoreText.enabled = true;
         yield return new WaitForSeconds(3f);
         findKeyMoreText.enabled = false;
