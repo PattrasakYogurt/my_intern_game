@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
@@ -13,10 +14,17 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int currentHealth;
     [SerializeField] private Healthbar healthbar;
     public float walkSpeed = 12f;
+    public InteractionUI interactionUI;
     [SerializeField] private float gravity = -9.81f;
     [SerializeField] private float jumpForce = 5f;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundDistance = 0.4f;
+    [SerializeField] private Transform orieantation;
+    [SerializeField] private Transform cameraPos;
+    [SerializeField] private LayerMask raycastLayer;
+    [SerializeField] private float raycastDistance = 6f;
+    [SerializeField] private string currentHit;
+
     //private Rigidbody rigidBody;
     [SerializeField] private LayerMask groundMask;
 
@@ -31,6 +39,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         PlayerMove();
+        PlayerRayCast();
         if(Input.GetKeyDown(KeyCode.H))
         {
             TakeDamage(20);
@@ -59,7 +68,7 @@ public class PlayerController : MonoBehaviour
         }
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
-        Vector3 direction = transform.right * h + transform.forward * v;
+        Vector3 direction = orieantation.right * h + orieantation.forward * v;
         characterController.Move(direction* walkSpeed * Time.deltaTime);
         velocity.y += gravity * Time.deltaTime;
         characterController.Move(velocity * Time.deltaTime);          
@@ -96,6 +105,32 @@ public class PlayerController : MonoBehaviour
             Debug.Log("StopCouch");
         }
         
+    }
+    public void PlayerRayCast()
+    {
+        if(Physics.Raycast(cameraPos.position, cameraPos.forward, out RaycastHit hit, raycastDistance, raycastLayer))
+        {
+            if(hit.collider.tag == "IInteractable") 
+            {
+                var interactable = hit.collider.GetComponent<IInteractable>();
+                interactionUI.Show(interactable.GetInteractionText());
+                if(Input.GetKeyDown(KeyCode.E))
+                {
+                    interactable.Interact();
+                }
+            }
+            else
+            {
+                interactionUI.Hide();
+            }
+            currentHit = hit.collider.name;
+            Debug.DrawRay(cameraPos.position, cameraPos.forward * raycastDistance, Color.green);
+        }
+        else
+        {
+            interactionUI.Hide();
+            Debug.DrawRay(cameraPos.position, cameraPos.forward * raycastDistance, Color.red);
+        }
     }
     
 }

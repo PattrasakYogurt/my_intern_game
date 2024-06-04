@@ -36,6 +36,10 @@ public class GameManager : MonoBehaviour
         {            
            PauseGame();           
         }
+        if(keyObtained == 7 )
+        {
+            isKeyObtainded = true;
+        }
         
     }
     public void DisablePlayer()

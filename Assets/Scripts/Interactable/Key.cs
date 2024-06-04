@@ -19,7 +19,7 @@ public class Key : MonoBehaviour, IInteractable
         keySound.Play();
         keyImageShadow.enabled = false;
         keyImage.enabled = true;
-        Destroy(gameObject, 2f);
+        Destroy(gameObject, 0.5f);
     }
 
 }
