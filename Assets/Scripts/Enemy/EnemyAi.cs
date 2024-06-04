@@ -20,8 +20,8 @@ public class EnemyAi : MonoBehaviour
     [Header("States")]
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
-    [SerializeField] private PlayerController playerController;
-
+    public PlayerController playerController;
+    
     private void Awake()
     {
         player = GameObject.Find("Player").transform;
@@ -29,8 +29,6 @@ public class EnemyAi : MonoBehaviour
     }
     void Start()
     {
-        
-        playerController = GetComponent<PlayerController>();
         
     }
 
