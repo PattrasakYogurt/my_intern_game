@@ -7,13 +7,16 @@ public class EnemyAi : MonoBehaviour
     public Transform player;
     public LayerMask whatIsGround, whatIsPlayer; 
     public NavMeshAgent agent;
+
     [Header("walk")]
     public Vector3 walkPoint;
     bool walkPointSet;
     public float walkPointRange;
+
     [Header("Attack")]
     public float timeBetweenAttacks;
     bool alreadyAttacked;
+
     [Header("States")]
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
@@ -22,6 +25,7 @@ public class EnemyAi : MonoBehaviour
     private void Awake()
     {
         player = GameObject.Find("Player").transform;
+        agent = GetComponent<NavMeshAgent>();
     }
     void Start()
     {
@@ -52,7 +56,7 @@ public class EnemyAi : MonoBehaviour
     {
         float randomZ = Random.Range(-walkPointRange, walkPointRange);
         float randomX = Random.Range(-walkPointRange, walkPointRange);
-        walkPoint = new Vector3(transform.position.x, transform.position.y, transform.position.z + randomZ);
+        walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
         if(Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
         {
             walkPointSet = true;

@@ -7202,8 +7202,8 @@ GameObject:
   - component: {fileID: 987119897}
   - component: {fileID: 987119898}
   - component: {fileID: 987119899}
-  m_Layer: 0
-  m_Name: PlayerController
+  m_Layer: 8
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8592,8 +8592,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1300460004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -44.1, y: 3.76, z: 42.2}
-  m_LocalScale: {x: 7.6036663, y: 7.6036663, z: 7.6036663}
+  m_LocalPosition: {x: -44.1, y: 1.78, z: 42.2}
+  m_LocalScale: {x: 4.243302, y: 4.243302, z: 4.243302}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -8611,16 +8611,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a5d1f14ec397514f9776cf2f47cbb24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 987119896}
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 193
+    m_Bits: 65
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 256
   agent: {fileID: 1300460005}
   walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 5
+  walkPointRange: 50
   timeBetweenAttacks: 1
   sightRange: 20
   attackRange: 10
