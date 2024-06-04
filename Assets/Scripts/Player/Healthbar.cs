@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class Healthbar : MonoBehaviour
 {
-    [SerializeField] private Slider slider;
-    [SerializeField] private Image fill;
+    public Slider slider;
+    public Image fill;
     public void SetMaxHealth(int health)
     {
         slider.maxValue = health;

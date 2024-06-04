@@ -16,6 +16,7 @@ public class EnemyAi : MonoBehaviour
     [Header("Attack")]
     public float timeBetweenAttacks;
     bool alreadyAttacked;
+    public int attackDamage = 20;
 
     [Header("States")]
     public float sightRange, attackRange;
@@ -81,18 +82,18 @@ public class EnemyAi : MonoBehaviour
     {
         agent.SetDestination(player.position);
     }
-    private void AttackPlayer()
+    public void AttackPlayer()
     {
         agent.SetDestination(transform.position);
         transform.LookAt(player);
+        playerController.TakeDamage(attackDamage);
         if(!alreadyAttacked)
         {
-            playerController.TakeDamage(20);
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
     }
-    private void ResetAttack()
+    public void ResetAttack()
     {
         alreadyAttacked = false;
     }
