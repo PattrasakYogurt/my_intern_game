@@ -123,6 +123,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &23933974
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 23933975}
+  m_Layer: 0
+  m_Name: Cam_NormalPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &23933975
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23933974}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.6822731, z: 0.17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 340178882}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &29260526
 GameObject:
   m_ObjectHideFlags: 0
@@ -2520,6 +2551,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 329372001}
   m_CullTransparentMesh: 1
+--- !u!4 &340178882 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3027946756729153770, guid: c443544ac65ee28438a79b8844c14332,
+    type: 3}
+  m_PrefabInstance: {fileID: 3027946756874218007}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &342225459
 GameObject:
   m_ObjectHideFlags: 0
@@ -11357,6 +11394,37 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1820207330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1820207331}
+  m_Layer: 0
+  m_Name: Cam_CouchPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1820207331
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820207330}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.159, z: 0.17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 340178882}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1820352537
 GameObject:
   m_ObjectHideFlags: 0
@@ -12413,9 +12481,19 @@ PrefabInstance:
       objectReference: {fileID: 1487655781}
     - target: {fileID: 3027946756980534028, guid: c443544ac65ee28438a79b8844c14332,
         type: 3}
+      propertyPath: camera_CouchPos
+      value: 
+      objectReference: {fileID: 1820207331}
+    - target: {fileID: 3027946756980534028, guid: c443544ac65ee28438a79b8844c14332,
+        type: 3}
       propertyPath: raycastDistance
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3027946756980534028, guid: c443544ac65ee28438a79b8844c14332,
+        type: 3}
+      propertyPath: camera_NormalPos
+      value: 
+      objectReference: {fileID: 23933975}
     - target: {fileID: 3027946756980534029, guid: c443544ac65ee28438a79b8844c14332,
         type: 3}
       propertyPath: fill

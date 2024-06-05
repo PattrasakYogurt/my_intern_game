@@ -32,6 +32,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private Transform orieantation;
     [SerializeField] private Transform cameraPos;
+    [SerializeField] private Transform camera_NormalPos;
+    [SerializeField] private Transform camera_CouchPos;
     [Header("LayerMaskGroup")]
     [SerializeField] private LayerMask raycastLayer;
     [SerializeField] private LayerMask groundMask;
@@ -57,6 +59,10 @@ public class PlayerController : MonoBehaviour
             {
                 stamina = 0;
             }
+        }
+        if(Input.GetKey(KeyCode.LeftControl))
+        {
+            cameraPos.position = new Vector3(transform.position.x, camera_CouchPos.position.y, camera_CouchPos.position.z);
         }
         StartCoroutine(RechargeStamina());
         
@@ -116,14 +122,15 @@ public class PlayerController : MonoBehaviour
         {
             isCouch = true;
             isRun = false;
-            walkSpeed -= 5f;
+            walkSpeed -= 7f;
             Debug.Log("Couch");
         }
         if (Input.GetKeyUp(KeyCode.LeftControl))
         {
             isCouch = false;
             isRun = false;
-            walkSpeed += 5f;
+            cameraPos.position = new Vector3(transform.position.x, camera_NormalPos.position.y, camera_NormalPos.position.z);
+            walkSpeed += 7f;
             Debug.Log("StopCouch");
         }
         
