@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     public Slider staminaBar;
     [Header("FloatGroup")]
     [SerializeField] private float runCost;
-    [SerializeField] private float chargeRate;
+    [SerializeField] private float chargeRate = 1f;
     public float stamina, maxStamina;
     public float walkSpeed = 12f;
     [SerializeField] private float gravity = -9.81f;
@@ -159,7 +159,7 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(1f);
         while(stamina < maxStamina)
         {
-            stamina += chargeRate / 20f;
+            stamina += chargeRate/100f;
             if(stamina > maxStamina) 
             { stamina = maxStamina;}
             staminaBar.value = stamina;
