@@ -54,8 +54,8 @@ public class EnemyAi : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.O))
         {
-            PlayerController player = GetComponent<PlayerController>();
-            player.TakeDamage(attackDamage);
+            playerController.currentHealth -= attackDamage;
+           
         }
     }
     private void SearchWalkPoint()
@@ -93,11 +93,11 @@ public class EnemyAi : MonoBehaviour
     {
         agent.SetDestination(transform.position);
         transform.LookAt(player);
-        //playerController.TakeDamage(20);
         
         if(!alreadyAttacked)
         {
             alreadyAttacked = true;
+            playerController.TakeDamage(attackDamage);
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
     }

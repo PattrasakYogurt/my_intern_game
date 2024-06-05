@@ -97,7 +97,7 @@ public class PlayerController : MonoBehaviour
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
         Vector3 direction = orieantation.right * h + orieantation.forward * v;
-        characterController.Move(direction* walkSpeed * Time.deltaTime);
+        characterController.Move(direction* walkSpeed * Time.deltaTime);       
         velocity.y += gravity * Time.deltaTime;
         characterController.Move(velocity * Time.deltaTime);          
         if (Input.GetButtonDown("Jump") && isGrounded)

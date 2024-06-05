@@ -6,6 +6,7 @@ public class TargetArea : MonoBehaviour
 {
     public PickableObjects.ObjectType areaType;
     public ParticleSystem correct_Particle;
+    public bool correctTik = false;
     void Start()
     {
         correct_Particle.Stop();
@@ -22,6 +23,8 @@ public class TargetArea : MonoBehaviour
             if(item.objectType == areaType)
             {
                 correct_Particle.Play();
+                correctTik = true;
+                GameManager.instance.pickCheck++;
             }
         }
     }

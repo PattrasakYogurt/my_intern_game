@@ -13,6 +13,9 @@ public class GameManager : MonoBehaviour
     public float timeRemaining;
     public bool isKeyObtainded = false;
     public int keyObtained = 0;
+    public int pickCheck = 0;
+    public bool isPickCheck = false;
+    public GameObject keyStand;
     [SerializeField] private PlayerController playerController;
     
 
@@ -39,6 +42,11 @@ public class GameManager : MonoBehaviour
         if(keyObtained >= 7 )
         {
             isKeyObtainded = true;
+        }
+        if(pickCheck >= 3 )
+        {
+            isPickCheck = true;
+            keyStand.SetActive(false);
         }
         
     }
