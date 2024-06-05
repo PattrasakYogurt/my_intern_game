@@ -7,6 +7,8 @@ public class EnemyAi : MonoBehaviour
     public Transform player;
     public LayerMask whatIsGround, whatIsPlayer; 
     public NavMeshAgent agent;
+    private Healthbar playerHealthbar;
+    private PlayerController playerController;
 
     [Header("walk")]
     public Vector3 walkPoint;
@@ -21,16 +23,16 @@ public class EnemyAi : MonoBehaviour
     [Header("States")]
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
-    public PlayerController playerController;
     
     private void Awake()
     {
         player = GameObject.Find("Player").transform;
-        agent = GetComponent<NavMeshAgent>();
+        agent = GetComponent<NavMeshAgent>();        
     }
     void Start()
     {
-        
+        playerHealthbar = GetComponent<Healthbar>();
+        playerController = GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
@@ -49,6 +51,11 @@ public class EnemyAi : MonoBehaviour
         if(playerInSightRange && playerInAttackRange)
         {
             AttackPlayer();
+        }
+        if(Input.GetKeyDown(KeyCode.O))
+        {
+            PlayerController player = GetComponent<PlayerController>();
+            player.TakeDamage(attackDamage);
         }
     }
     private void SearchWalkPoint()
@@ -86,7 +93,8 @@ public class EnemyAi : MonoBehaviour
     {
         agent.SetDestination(transform.position);
         transform.LookAt(player);
-        playerController.TakeDamage(attackDamage);
+        //playerController.TakeDamage(20);
+        
         if(!alreadyAttacked)
         {
             alreadyAttacked = true;

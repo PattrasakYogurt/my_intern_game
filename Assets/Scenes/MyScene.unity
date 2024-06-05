@@ -207,7 +207,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: c8496951d8d7df44b81b7def247e16ea, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -245,8 +245,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 57043490}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 8.29}
-  m_LocalScale: {x: 2.56, y: 2.56, z: 2.56}
+  m_LocalPosition: {x: 0, y: 0, z: 10.33}
+  m_LocalScale: {x: 6.83648, y: 6.83648, z: 6.83648}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -264,7 +264,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3acbc2b97aeaf124b947a0e66bf1b4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trapSound: {fileID: 0}
   reducedSpeed: 2
   normalSpeed: 12
 --- !u!1 &71312129
@@ -980,7 +979,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110622031}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.79, y: -0.57, z: 2.8}
+  m_LocalPosition: {x: 16.79, y: -0.57, z: -65.6}
   m_LocalScale: {x: 8.063767, y: 8.063767, z: 8.063767}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2044,7 +2043,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239256222}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.79, y: -0.57, z: 11.96}
+  m_LocalPosition: {x: 29.8, y: -0.57, z: -30.1}
   m_LocalScale: {x: 8.063767, y: 8.063767, z: 8.063767}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2407,7 +2406,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291789602}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.59, y: -0.57, z: -16.19}
+  m_LocalPosition: {x: 54.5, y: -0.57, z: -46.1}
   m_LocalScale: {x: 8.063767, y: 8.063767, z: 8.063767}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3234,7 +3233,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438692694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.79, y: -0.57, z: -6.56}
+  m_LocalPosition: {x: 36.9, y: -0.57, z: -58.1}
   m_LocalScale: {x: 8.063767, y: 8.063767, z: 8.063767}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7143,7 +7142,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 967024799}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.84, y: -0.57, z: -16.19}
+  m_LocalPosition: {x: -1.84, y: -0.57, z: -45.8}
   m_LocalScale: {x: 8.063767, y: 8.063767, z: 8.063767}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9933,7 +9932,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611770880}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.79, y: -0.57, z: -16.19}
+  m_LocalPosition: {x: 36.4, y: -0.57, z: -77.5}
   m_LocalScale: {x: 8.063767, y: 8.063767, z: 8.063767}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12379,9 +12378,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3027946756980534028, guid: c443544ac65ee28438a79b8844c14332,
         type: 3}
+      propertyPath: runCost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027946756980534028, guid: c443544ac65ee28438a79b8844c14332,
+        type: 3}
+      propertyPath: stamina
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027946756980534028, guid: c443544ac65ee28438a79b8844c14332,
+        type: 3}
+      propertyPath: chargeRate
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027946756980534028, guid: c443544ac65ee28438a79b8844c14332,
+        type: 3}
+      propertyPath: maxStamina
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027946756980534028, guid: c443544ac65ee28438a79b8844c14332,
+        type: 3}
+      propertyPath: staminaBar
+      value: 
+      objectReference: {fileID: 1487655781}
+    - target: {fileID: 3027946756980534028, guid: c443544ac65ee28438a79b8844c14332,
+        type: 3}
       propertyPath: interactionUI
       value: 
       objectReference: {fileID: 836163006}
+    - target: {fileID: 3027946756980534028, guid: c443544ac65ee28438a79b8844c14332,
+        type: 3}
+      propertyPath: staminaSlider
+      value: 
+      objectReference: {fileID: 1487655781}
     - target: {fileID: 3027946756980534028, guid: c443544ac65ee28438a79b8844c14332,
         type: 3}
       propertyPath: raycastDistance

@@ -2,54 +2,76 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    private int maxHealth = 100;
+    [Header("HealthGroup")]
+    public int maxHealth = 100;
+    public int currentHealth;
+    public Healthbar healthbar;
+    [Header("BoolGroup")]
     bool isGrounded;
     private bool isRun = false;
     private bool isCouch = false;
+    [Header("Other")]
     private CharacterController characterController;
-    private Vector3 velocity;
-    [SerializeField] private int currentHealth;
-    [SerializeField] private Healthbar healthbar;
-    public float walkSpeed = 12f;
     public InteractionUI interactionUI;
+    private Vector3 velocity;    
+    public Slider staminaBar;
+    [Header("FloatGroup")]
+    [SerializeField] private float runCost;
+    [SerializeField] private float chargeRate;
+    public float stamina, maxStamina;
+    public float walkSpeed = 12f;
     [SerializeField] private float gravity = -9.81f;
     [SerializeField] private float jumpForce = 5f;
-    [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundDistance = 0.4f;
+    [SerializeField] private float raycastDistance = 6f;
+    [Header("TransformGroup")]
+    [SerializeField] private Transform groundCheck;
     [SerializeField] private Transform orieantation;
     [SerializeField] private Transform cameraPos;
+    [Header("LayerMaskGroup")]
     [SerializeField] private LayerMask raycastLayer;
-    [SerializeField] private float raycastDistance = 6f;
-    [SerializeField] private string currentHit;
-
-    //private Rigidbody rigidBody;
     [SerializeField] private LayerMask groundMask;
+    [SerializeField] private string currentHit;
 
     void Start()
     {
-        currentHealth = maxHealth;
+        currentHealth = maxHealth;       
         healthbar = GetComponent<Healthbar>();
         characterController = GetComponent<CharacterController>();
         //rigidBody = GetComponent<Rigidbody>();
-        healthbar.SetHealth(maxHealth);
+        healthbar.SetHealth(maxHealth);       
     }
     void Update()
     {
         PlayerMove();
         PlayerRayCast();
-        if(Input.GetKeyDown(KeyCode.H))
+        if (Input.GetKey(KeyCode.LeftShift))
         {
-            TakeDamage(20);
+            stamina -= runCost * Time.deltaTime;
+            staminaBar.value = stamina;
+            if(stamina < 0 )
+            {
+                stamina = 0;
+            }
         }
+        StartCoroutine(RechargeStamina());
+        
+
     }
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthbar.SetHealth(currentHealth);
+        if(currentHealth <= 0)
+        {
+            GameManager.instance.PlayerLoose();
+        }
     }
+    
     public void Heal(int healAmount)
     {
         currentHealth += healAmount;
@@ -80,7 +102,7 @@ public class PlayerController : MonoBehaviour
         {
             isRun = true;
             isCouch = false;
-            walkSpeed += 10f;
+            walkSpeed += 10f;           
             Debug.Log("Run");
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))
@@ -130,6 +152,18 @@ public class PlayerController : MonoBehaviour
         {
             interactionUI.Hide();
             Debug.DrawRay(cameraPos.position, cameraPos.forward * raycastDistance, Color.red);
+        }
+    }
+    IEnumerator RechargeStamina()
+    {
+        yield return new WaitForSeconds(1f);
+        while(stamina < maxStamina)
+        {
+            stamina += chargeRate / 20f;
+            if(stamina > maxStamina) 
+            { stamina = maxStamina;}
+            staminaBar.value = stamina;
+            yield return new WaitForSeconds(1f);
         }
     }
     
