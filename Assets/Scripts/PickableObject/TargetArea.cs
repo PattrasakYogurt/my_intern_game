@@ -10,7 +10,7 @@ public class TargetArea : MonoBehaviour
     void Start()
     {
         correct_Particle.Stop();
-        this.gameObject.SetActive(true);   
+        
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -26,7 +26,7 @@ public class TargetArea : MonoBehaviour
                 correct_Particle.Play();
                 correctTik = true;
                 GameManager.instance.pickCheck++;
-                this.gameObject.SetActive(false);
+                
             }
         }
     }
