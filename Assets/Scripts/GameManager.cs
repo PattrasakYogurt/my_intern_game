@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0;
         looseUI.SetActive(true);
     }
-    private void PlayerWin()
+    public void PlayerWin()
     {
         DisablePlayer();
         Time.timeScale = 0;
