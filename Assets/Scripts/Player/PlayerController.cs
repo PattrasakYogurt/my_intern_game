@@ -108,21 +108,21 @@ public class PlayerController : MonoBehaviour
         {
             isRun = true;
             isCouch = false;
-            walkSpeed += 10f;           
+            walkSpeed += 7f;           
             Debug.Log("Run");
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             isRun = false;
             isCouch = false;
-            walkSpeed -= 10f;
+            walkSpeed -= 7f;
             Debug.Log("StopRun");
         }
         if(Input.GetKeyDown(KeyCode.LeftControl))
         {
             isCouch = true;
             isRun = false;
-            walkSpeed -= 7f;
+            walkSpeed -= 4f;
             Debug.Log("Couch");
         }
         if (Input.GetKeyUp(KeyCode.LeftControl))
@@ -130,7 +130,7 @@ public class PlayerController : MonoBehaviour
             isCouch = false;
             isRun = false;
             cameraPos.position = new Vector3(transform.position.x, camera_NormalPos.position.y, camera_NormalPos.position.z);
-            walkSpeed += 7f;
+            walkSpeed += 4f;
             Debug.Log("StopCouch");
         }
         

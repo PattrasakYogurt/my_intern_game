@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - IInteractable
+  - ObjectForPush
   layers:
   - Default
   - TransparentFX
