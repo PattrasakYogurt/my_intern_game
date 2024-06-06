@@ -6,6 +6,7 @@ TagManager:
   tags:
   - IInteractable
   - ObjectForPush
+  - PushObject
   layers:
   - Default
   - TransparentFX
