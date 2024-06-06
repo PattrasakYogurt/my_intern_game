@@ -141,6 +141,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   agent: {fileID: 2113131984723602581}
+  playerController: {fileID: 3027946756980534028, guid: c443544ac65ee28438a79b8844c14332,
+    type: 3}
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 50
   timeBetweenAttacks: 1

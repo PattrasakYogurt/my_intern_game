@@ -8,7 +8,14 @@ public class EnemyAi : MonoBehaviour
     public LayerMask whatIsGround, whatIsPlayer; 
     public NavMeshAgent agent;
     private Healthbar playerHealthbar;
-    private PlayerController playerController;
+    [SerializeField] private PlayerController playerController;
+    public PlayerController PlayerController 
+    { get {  return playerController;  }
+      set 
+        { 
+            playerController = GetComponent<PlayerController>(); 
+        } 
+    }
 
     [Header("walk")]
     public Vector3 walkPoint;
