@@ -18,10 +18,8 @@ public class ObstaclePush : MonoBehaviour
     }
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if (hit.collider.tag == "PushObject")
+        if (hit.collider.tag == "ObejctForPush")
         {
-
-
             Rigidbody rigibody = hit.collider.attachedRigidbody;
             if (rigibody != null)
             {
