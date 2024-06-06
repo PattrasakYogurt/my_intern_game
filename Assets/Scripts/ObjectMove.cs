@@ -18,7 +18,7 @@ public class ObjectMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!isMoved && timer >= 10f) //60f = 5นาที
+        if(!isMoved && timer >= 30f) //60f = 5นาที
         {
             SetRandomDestination();
             isMoved = true;
@@ -36,8 +36,8 @@ public class ObjectMove : MonoBehaviour
     }
     private void SetRandomDestination()
     {
-        float x = Random.Range(-50f, 50f); //แกน X
-        float z = Random.Range(-50f, 50f);
+        float x = Random.Range(-40f, 40f); //แกน X
+        float z = Random.Range(-40f, 40f);
         destination = new Vector3(x, transform.position.y, z);
     }
 }
