@@ -2492,7 +2492,7 @@ NavMeshObstacle:
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: -0.49, y: 0, z: 0}
   m_TimeToStationary: 0.5
 --- !u!95 &143924115
 Animator:
@@ -22259,7 +22259,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 826ff428b5003814d90192cd07e6b646, type: 2}
 --- !u!64 &1647791757
 MeshCollider:
   m_ObjectHideFlags: 0
