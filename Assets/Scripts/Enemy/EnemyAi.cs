@@ -104,7 +104,12 @@ public class EnemyAi : MonoBehaviour
         if(!alreadyAttacked)
         {
             alreadyAttacked = true;
-            playerController.TakeDamage(attackDamage);
+            PlayerController playerCon = player.GetComponent<PlayerController>();
+            if(playerCon != null)
+            {
+                playerCon.TakeDamage(attackDamage);
+            }
+            //playerController.TakeDamage(attackDamage);
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
     }
@@ -119,4 +124,5 @@ public class EnemyAi : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, sightRange);
     }
+    
 }

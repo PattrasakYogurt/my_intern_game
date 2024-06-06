@@ -97,9 +97,7 @@ public class PlayerController : MonoBehaviour
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
         Vector3 direction = orieantation.right * h + orieantation.forward * v;
-        characterController.Move(direction* walkSpeed * Time.deltaTime); 
-       // Vector3 currentRotation = transform.rotation.eulerAngles; //แปลง Quaternion to Vector3       
-       // transform.rotation = Quaternion.Euler(currentRotation + new Vector3(0,1,0)* h);
+        characterController.Move(direction* walkSpeed * Time.deltaTime);       
         velocity.y += gravity * Time.deltaTime;
         characterController.Move(velocity * Time.deltaTime);          
         if (Input.GetButtonDown("Jump") && isGrounded)
