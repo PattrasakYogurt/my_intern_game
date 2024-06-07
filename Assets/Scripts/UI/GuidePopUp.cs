@@ -5,17 +5,30 @@ using UnityEngine.UI;
 
 public class GuidePopUp : MonoBehaviour
 {
-    public Image guideImage;
+    public GameObject guideImage;
     void Start()
     {
-        guideImage.enabled = false; 
+        guideImage.SetActive(false);
     }
     private void OnTriggerEnter(Collider other)
     {
-        guideImage.enabled = true;
+        if(other.gameObject.tag == "Player")
+        {
+            guideImage.SetActive(true); 
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            Time.timeScale = 0;
+            GameManager.instance.DisablePlayer();
+        }
     }
-    private void OnTriggerExit(Collider other)
+    public void CloseGuidePopUp()
     {
-        guideImage.enabled = false;
+        guideImage.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        Time.timeScale = 1;
+        GameManager.instance.EnablePlayer();
+        Collider collider = GetComponent<Collider>();
+        collider.enabled = false;
     }
 }
