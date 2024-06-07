@@ -6,7 +6,7 @@ public class TrapController : MonoBehaviour
 {
     //[SerializeField] private AudioSource trapSound;
     [SerializeField]private float reducedSpeed = 2f; // The speed to reduce to when in the trap
-    [SerializeField]private float normalSpeed = 12f; // The normal walking speed of the player
+    [SerializeField]private float normalSpeed = 7f; // The normal walking speed of the player
     
     private void OnTriggerEnter(Collider other)
     {
