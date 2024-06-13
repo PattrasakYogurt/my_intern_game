@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: fd02162a721e1604f9b004ad6fe993f7
+guid: 8139b45c8996e624fb2cb5c492e1d728
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Cha_Monster_2
-    second: {fileID: 2100000, guid: 7f32ce4d2dfd6bd4c9c34082ffa0d534, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -38,7 +33,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Monster2_Attack
+      name: Monster2_Idle
       takeName: Take 001
       internalID: 1827226128182048838
       firstFrame: 0
@@ -127,11 +122,12 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: fd02162a721e1604f9b004ad6fe993f7,
+    type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 2
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
