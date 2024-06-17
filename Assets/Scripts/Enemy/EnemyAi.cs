@@ -8,6 +8,7 @@ public class EnemyAi : MonoBehaviour
     public LayerMask whatIsGround, whatIsPlayer; 
     public NavMeshAgent agent;
     private Healthbar playerHealthbar;
+    private Animator animator;
     [SerializeField] private PlayerController playerController;
     public PlayerController PlayerController 
     { get {  return playerController;  }
@@ -34,15 +35,14 @@ public class EnemyAi : MonoBehaviour
     private void Awake()
     {
         player = GameObject.Find("Player").transform;
-        agent = GetComponent<NavMeshAgent>();        
+        agent = GetComponent<NavMeshAgent>();    
     }
     void Start()
     {
+        animator = GetComponent<Animator>();
         playerHealthbar = GetComponent<Healthbar>();
         playerController = GetComponent<PlayerController>();
     }
-
-    // Update is called once per frame
     void Update()
     {
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
@@ -50,16 +50,19 @@ public class EnemyAi : MonoBehaviour
         if(!playerInSightRange && !playerInAttackRange)
         {
             Patroling();
+            animator.SetTrigger("Walk");
         }
         if(playerInSightRange && !playerInAttackRange)
         {
             ChasePlayer();
+            animator.SetTrigger("Run");
         }
-        if(playerInSightRange && playerInAttackRange)
+        if (playerInSightRange && playerInAttackRange)
         {
             AttackPlayer();
+            animator.SetTrigger("Attack");
         }
-        if(Input.GetKeyDown(KeyCode.O))
+        if (Input.GetKeyDown(KeyCode.O))
         {
             playerController.currentHealth -= attackDamage;
            

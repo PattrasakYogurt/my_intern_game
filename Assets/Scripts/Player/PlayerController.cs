@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float chargeRate = 1f;
     public float stamina, maxStamina;
     public float walkSpeed = 12f;
+    public float originlWalkSpeed = 7f;
     [SerializeField] private float gravity = -9.81f;
     [SerializeField] private float jumpForce = 5f;
     [SerializeField] private float groundDistance = 0.4f;
