@@ -305,6 +305,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Toy_Deco03_Dice_03
       objectReference: {fileID: 0}
+    - target: {fileID: 3416861119040439806, guid: 0fa3cd5f4bd1fc14481fbba61043f1ee,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3777356141186540587, guid: 0fa3cd5f4bd1fc14481fbba61043f1ee,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4265,6 +4270,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Toy_Deco03_Dice_04
       objectReference: {fileID: 0}
+    - target: {fileID: 3416861119040439806, guid: e1226dc126f75394f8460f82631d7f81,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3777356141186540587, guid: e1226dc126f75394f8460f82631d7f81,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4784,6 +4794,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Wall_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 9c1cf82bc726dc047a91b16c03e504e4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5493485909308033454, guid: 9c1cf82bc726dc047a91b16c03e504e4,
         type: 3}
@@ -7533,7 +7548,7 @@ PrefabInstance:
     - target: {fileID: 5149612155311166228, guid: 5dd4992c6c0ba394ea88e35e2d5246bc,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5493485909308033454, guid: 5dd4992c6c0ba394ea88e35e2d5246bc,
         type: 3}
@@ -10423,6 +10438,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Toy_Deco03_Dice_01
       objectReference: {fileID: 0}
+    - target: {fileID: 3416861119040439806, guid: ba171e2368ced08489c3f4688072a78e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba171e2368ced08489c3f4688072a78e, type: 3}
 --- !u!1 &607559026
@@ -11787,7 +11807,7 @@ PrefabInstance:
     - target: {fileID: 5149612155311166228, guid: 84b25e3140262274d860bf59d7be5420,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5493485909308033454, guid: 84b25e3140262274d860bf59d7be5420,
         type: 3}
@@ -21732,6 +21752,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Toy_Deco_01
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2cd975469a6a3964d9bbdffb587a734a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cd975469a6a3964d9bbdffb587a734a, type: 3}
 --- !u!1 &1136355077
@@ -23987,7 +24012,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e66abb27f55ae7e4ca849d7a285d6cf2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.99
+      value: 4.61
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e66abb27f55ae7e4ca849d7a285d6cf2,
         type: 3}
@@ -23997,7 +24022,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e66abb27f55ae7e4ca849d7a285d6cf2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -283.12
+      value: -290.67
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e66abb27f55ae7e4ca849d7a285d6cf2,
         type: 3}
@@ -28708,6 +28733,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Toy_Deco03_Dice_02
       objectReference: {fileID: 0}
+    - target: {fileID: 3416861119040439806, guid: 48939704bcd5ec546b3e221875b2965b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3777356141186540587, guid: 48939704bcd5ec546b3e221875b2965b,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -30140,7 +30170,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 53f215178ee6077489425a86017d15e3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.44
+      value: 13.55
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 53f215178ee6077489425a86017d15e3,
         type: 3}
@@ -30150,7 +30180,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 53f215178ee6077489425a86017d15e3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -280.57
+      value: -289.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 53f215178ee6077489425a86017d15e3,
         type: 3}
@@ -32440,7 +32470,7 @@ PrefabInstance:
     - target: {fileID: 5149612155311166228, guid: 7c394aec2cd786b4ca641326f3802fcf,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5493485909308033454, guid: 7c394aec2cd786b4ca641326f3802fcf,
         type: 3}
@@ -37025,6 +37055,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Toy_Cube_Alphabet_04
       objectReference: {fileID: 0}
+    - target: {fileID: 7640798536786375496, guid: 41f54e0f2c3ec3e4fba84a9e950646f4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41f54e0f2c3ec3e4fba84a9e950646f4, type: 3}
 --- !u!1001 &1568686937918681889
@@ -37038,6 +37073,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Cube_Alphabet_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2286175768637641101, guid: af1af623944f1a847ac8a3baec745722,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7862291979540501837, guid: af1af623944f1a847ac8a3baec745722,
         type: 3}
@@ -37107,6 +37147,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Cube_Alphabet_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022493790760643562, guid: 9c63f3d19d7d6b641b39bef9e087ee4a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8641636498006602701, guid: 9c63f3d19d7d6b641b39bef9e087ee4a,
         type: 3}
@@ -37428,6 +37473,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Toy_Cube_Alphabet_05
       objectReference: {fileID: 0}
+    - target: {fileID: 768366111304095898, guid: 4280e2b9ccaef53498db824f4f2d7a69,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4280e2b9ccaef53498db824f4f2d7a69, type: 3}
 --- !u!1001 &5323930655696324413
@@ -37441,6 +37491,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Cube_Alphabet_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1219829057003324769, guid: 85884bb0c22bfdd4ab03371fd47844a4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5599935973358660022, guid: 85884bb0c22bfdd4ab03371fd47844a4,
         type: 3}
@@ -37511,6 +37566,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Toy_Wall_Red
       objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 315685c5d48cc264f9a2867ed313e94c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5493485909308033454, guid: 315685c5d48cc264f9a2867ed313e94c,
         type: 3}
       propertyPath: m_RootOrder
@@ -37579,6 +37639,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Deco_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322538250747305888, guid: c8ddaf764c740624fbf257917999ec67,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1806305347591767322, guid: c8ddaf764c740624fbf257917999ec67,
         type: 3}
