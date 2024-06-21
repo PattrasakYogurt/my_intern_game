@@ -23,8 +23,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float runCost;
     [SerializeField] private float chargeRate = 1f;
     public float stamina, maxStamina;
-    public float walkSpeed = 12f;
-    public float originlWalkSpeed = 7f;
+    public float walkSpeed = 5f;
+    public float originlWalkSpeed = 5f;
     [SerializeField] private float gravity = -9.81f;
     [SerializeField] private float jumpForce = 5f;
     [SerializeField] private float groundDistance = 0.4f;
@@ -109,21 +109,21 @@ public class PlayerController : MonoBehaviour
         {
             isRun = true;
             isCouch = false;
-            walkSpeed += 7f;           
+            walkSpeed += 5f;           
             Debug.Log("Run");
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             isRun = false;
             isCouch = false;
-            walkSpeed -= 7f;
+            walkSpeed -= 5f;
             Debug.Log("StopRun");
         }
         if(Input.GetKeyDown(KeyCode.LeftControl))
         {
             isCouch = true;
             isRun = false;
-            walkSpeed -= 4f;
+            walkSpeed -= 2f;
             Debug.Log("Couch");
         }
         if (Input.GetKeyUp(KeyCode.LeftControl))
@@ -131,7 +131,7 @@ public class PlayerController : MonoBehaviour
             isCouch = false;
             isRun = false;
             cameraPos.position = new Vector3(transform.position.x, camera_NormalPos.position.y, camera_NormalPos.position.z);
-            walkSpeed += 4f;
+            walkSpeed += 2f;
             Debug.Log("StopCouch");
         }
         

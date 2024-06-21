@@ -7,7 +7,7 @@ public class GuidePopUp : MonoBehaviour
 {
     public GameObject guideImage;
     public PlayerController playerController;
-    private float playerWalkSpeed = 7f;
+    private float playerWalkSpeed = 5f;
     void Start()
     {
         guideImage.SetActive(false);
