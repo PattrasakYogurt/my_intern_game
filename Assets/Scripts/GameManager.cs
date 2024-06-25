@@ -10,8 +10,11 @@ public class GameManager : MonoBehaviour
     public GameObject looseUI;
     public GameObject pauseUI;
     public TextMeshProUGUI timerText;
+  //public TextMeshProUGUI timeRecordText;
     public float timeRemaining;
     public bool isKeyObtainded = false;
+    public bool isKeyObtained_level2 = false;
+    public bool isKeyObtained_level3 = false;
     public int keyObtained = 0;
     public int pickCheck = 0;
     public bool isPickCheck = false;
@@ -35,15 +38,23 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
-        if(Input.GetKeyUp(KeyCode.Escape))
-        {            
-           PauseGame();           
-        }
-        if(keyObtained >= 7 )
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            PauseGame();
+        }      
+        if(keyObtained == 7 )
         {
             isKeyObtainded = true;
         }
-        if(pickCheck >= 3 )
+        if (keyObtained == 12)
+        {
+            isKeyObtained_level2 = true;
+        }
+        if (keyObtained == 15)
+        {
+            isKeyObtained_level3 = true;
+        }
+        if (pickCheck >= 3 )
         {
             isPickCheck = true;
             keyStand.SetActive(false);

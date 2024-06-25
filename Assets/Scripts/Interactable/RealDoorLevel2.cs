@@ -5,15 +5,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 
-public class RealDoor : MonoBehaviour, IInteractable
+public class RealDoorLevel2 :MonoBehaviour, IInteractable
 {
     public TextMeshProUGUI needMoreKeyText;
     public SetTimer setTimer;
     [SerializeField] private Collider doorWingCollider;
     [SerializeField] private Animator doorAnimator;
     [SerializeField] private AudioSource doorSound;
-    [SerializeField] private GameObject keyArrange_Level1;
     [SerializeField] private GameObject keyArrange_Level2;
+    [SerializeField] private GameObject keyArrange_Level3;
     private bool isOpen;
     public string GetInteractionText()
     {
@@ -22,22 +22,22 @@ public class RealDoor : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        if(GameManager.instance.isKeyObtainded == false)
+        if (GameManager.instance.isKeyObtained_level2 == false)
         {
-            StartCoroutine(FindMoreKey());
+            StartCoroutine(FindMoreKey_Level2());
         }
-        if(GameManager.instance.isKeyObtainded == true)
-        {          
-            setTimer.remainingTime += 300f;
+        if (GameManager.instance.isKeyObtained_level2 == true)
+        {
+            setTimer.remainingTime += 200f;
             isOpen = !isOpen;
             doorAnimator.SetBool("IsOpen", isOpen);
-            doorSound.Play();
             StartCoroutine(DisableColliderDoor());
-            keyArrange_Level1.SetActive(false);
-            keyArrange_Level2.SetActive(true);
+            doorSound.Play();
+            keyArrange_Level2.SetActive(false);
+            keyArrange_Level3.SetActive(true);
         }
     }
-    IEnumerator FindMoreKey()
+    IEnumerator FindMoreKey_Level2()
     {
         needMoreKeyText.enabled = true;
         yield return new WaitForSeconds(3f);
@@ -45,11 +45,11 @@ public class RealDoor : MonoBehaviour, IInteractable
     }
     IEnumerator DisableColliderDoor()
     {
-        Collider collider = GetComponent<Collider>();
-        collider.enabled = false;
+        Collider door = GetComponent<Collider>();
+        door.enabled = false;
         doorWingCollider.enabled = false;
         yield return new WaitForSeconds(1f);
-        collider.enabled = true;
+        door.enabled = true;
         doorWingCollider.enabled = true;
     }
 }

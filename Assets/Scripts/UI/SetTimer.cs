@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class SetTimer : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI timerText;
-    [SerializeField] private float remainingTime;
+    public TextMeshProUGUI timerText;
+    public float remainingTime;
 
     // Start is called before the first frame update
     void Start()
