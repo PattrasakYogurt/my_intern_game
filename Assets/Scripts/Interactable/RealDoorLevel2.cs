@@ -28,7 +28,7 @@ public class RealDoorLevel2 :MonoBehaviour, IInteractable
         }
         if (GameManager.instance.isKeyObtained_level2 == true)
         {
-            setTimer.remainingTime += 200f;
+            setTimer.remainingTime += 150f;
             isOpen = !isOpen;
             doorAnimator.SetBool("IsOpen", isOpen);
             StartCoroutine(DisableColliderDoor());
