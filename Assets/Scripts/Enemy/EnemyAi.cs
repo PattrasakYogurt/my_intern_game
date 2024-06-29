@@ -6,17 +6,9 @@ public class EnemyAi : MonoBehaviour
 {
     public Transform player;
     public LayerMask whatIsGround, whatIsPlayer; 
-    public NavMeshAgent agent;
-    private Healthbar playerHealthbar;
+    public NavMeshAgent agent;   
     private Animator animator;
-    [SerializeField] private PlayerController playerController;
-    public PlayerController PlayerController 
-    { get {  return playerController;  }
-      set 
-        { 
-            playerController = GetComponent<PlayerController>(); 
-        } 
-    }
+    [SerializeField] private PlayerController playerController;   
 
     [Header("walk")]
     public Vector3 walkPoint;
@@ -40,8 +32,8 @@ public class EnemyAi : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        playerHealthbar = GetComponent<Healthbar>();
-        playerController = GetComponent<PlayerController>();
+        //playerController = GetComponent<PlayerController>();
+        playerController = player.GetComponent<PlayerController>();
     }
     void Update()
     {
@@ -61,12 +53,7 @@ public class EnemyAi : MonoBehaviour
         {
             AttackPlayer();
             animator.SetTrigger("Attack");
-        }
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            playerController.currentHealth -= attackDamage;
-           
-        }
+        }       
     }
     private void SearchWalkPoint()
     {
@@ -111,15 +98,14 @@ public class EnemyAi : MonoBehaviour
             if(playerCon != null)
             {
                 playerCon.TakeDamage(attackDamage);
-            }
-            //playerController.TakeDamage(attackDamage);
+            }           
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
     }
     public void ResetAttack()
     {
         alreadyAttacked = false;
-    }
+    }   
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
