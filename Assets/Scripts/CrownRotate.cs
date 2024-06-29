@@ -5,12 +5,13 @@ using UnityEngine;
 public class CrownRotate : MonoBehaviour
 {
     public float rotationSpeed = 45f; // Degrees per second
-    public float rotationDuration = 8f; // Duration of rotation in seconds
+    public float rotationDuration = 5f; // Duration of rotation in seconds
     public float interval = 30f; // Time between rotations in seconds
 
     private float timer;
     private bool isRotating;
     private float rotationTime;
+    private int rotationDirection;
 
     void Start()
     {
@@ -27,6 +28,7 @@ public class CrownRotate : MonoBehaviour
         {
             isRotating = true;
             timer = 0f;
+            rotationDirection = Random.Range(0, 2) == 0 ? 1 : -1; // Randomly set rotation direction to 1 (right) or -1 (left)
         }
 
         if (isRotating)
@@ -34,7 +36,7 @@ public class CrownRotate : MonoBehaviour
             rotationTime += Time.deltaTime;
             if (rotationTime < rotationDuration)
             {
-                transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
+                transform.Rotate(Vector3.up, rotationSpeed * rotationDirection * Time.deltaTime);
             }
             else
             {
