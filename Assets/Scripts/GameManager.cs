@@ -20,7 +20,37 @@ public class GameManager : MonoBehaviour
     public bool isPickCheck = false;
     public GameObject keyStand;
     [SerializeField] private PlayerController playerController;
-    
+    [SerializeField] private Image keyImageShadow1;
+    [SerializeField] private Image keyImage1;
+    [SerializeField] private Image keyImageShadow2;
+    [SerializeField] private Image keyImage2;
+    [SerializeField] private Image keyImageShadow3;
+    [SerializeField] private Image keyImage3;
+    [SerializeField] private Image keyImageShadow4;
+    [SerializeField] private Image keyImage4;
+    [SerializeField] private Image keyImageShadow5;
+    [SerializeField] private Image keyImage5;
+    [SerializeField] private Image keyImageShadow6;
+    [SerializeField] private Image keyImage6;
+    [SerializeField] private Image keyImageShadow7;
+    [SerializeField] private Image keyImage7;
+    [SerializeField] private Image keyImageShadow8;
+    [SerializeField] private Image keyImage8;
+    [SerializeField] private Image keyImageShadow9;
+    [SerializeField] private Image keyImage9;
+    [SerializeField] private Image keyImageShadow10;
+    [SerializeField] private Image keyImage10;
+    [SerializeField] private Image keyImageShadow11;
+    [SerializeField] private Image keyImage11;
+    [SerializeField] private Image keyImageShadow12;
+    [SerializeField] private Image keyImage12;
+    [SerializeField] private Image keyImageShadow13;
+    [SerializeField] private Image keyImage13;
+    [SerializeField] private Image keyImageShadow14;
+    [SerializeField] private Image keyImage14;
+    [SerializeField] private Image keyImageShadow15;
+    [SerializeField] private Image keyImage15;
+
 
     public static GameManager instance;
 
@@ -41,17 +71,83 @@ public class GameManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Escape))
         {
             PauseGame();
-        }      
-        if(keyObtained == 7 )
+        }  
+        if(keyObtained == 1 )
         {
+            keyImageShadow1.enabled = false;
+            keyImage1.enabled = true;
+        }
+        if (keyObtained == 2)
+        {
+            keyImageShadow2.enabled = false;
+            keyImage2.enabled = true;
+        }
+        if (keyObtained == 3)
+        {
+            keyImageShadow3.enabled = false;
+            keyImage3.enabled = true;
+        }
+        if (keyObtained == 4)
+        {
+            keyImageShadow4.enabled = false;
+            keyImage4.enabled = true;
+        }
+        if (keyObtained == 5)
+        {
+            keyImageShadow5.enabled = false;
+            keyImage5.enabled = true;
+        }
+        if (keyObtained == 6)
+        {
+            keyImageShadow6.enabled = false;
+            keyImage6.enabled = true;
+        }
+        if (keyObtained == 7 )
+        {
+            keyImageShadow7.enabled = false;
+            keyImage7.enabled = true;
             isKeyObtainded = true;
+        }
+        if (keyObtained == 8)
+        {
+            keyImageShadow8.enabled = false;
+            keyImage8.enabled = true;
+        }
+        if (keyObtained == 9)
+        {
+            keyImageShadow9.enabled = false;
+            keyImage9.enabled = true;
+        }
+        if (keyObtained == 10)
+        {
+            keyImageShadow10.enabled = false;
+            keyImage10.enabled = true;
+        }
+        if (keyObtained == 11)
+        {
+            keyImageShadow11.enabled = false;
+            keyImage11.enabled = true;
         }
         if (keyObtained == 12)
         {
+            keyImageShadow12.enabled = false;
+            keyImage12.enabled = true;
             isKeyObtained_level2 = true;
+        }
+        if (keyObtained == 13)
+        {
+            keyImageShadow13.enabled = false;
+            keyImage13.enabled = true;
+        }
+        if (keyObtained == 14)
+        {
+            keyImageShadow14.enabled = false;
+            keyImage14.enabled = true;
         }
         if (keyObtained == 15)
         {
+            keyImageShadow15.enabled = false;
+            keyImage15.enabled = true;
             isKeyObtained_level3 = true;
         }
         if (pickCheck >= 3 )

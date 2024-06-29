@@ -11440,6 +11440,36 @@ MonoBehaviour:
   isPickCheck: 0
   keyStand: {fileID: 1895816944}
   playerController: {fileID: 987119899}
+  keyImageShadow1: {fileID: 879188031}
+  keyImage1: {fileID: 179910320}
+  keyImageShadow2: {fileID: 1081256374}
+  keyImage2: {fileID: 1288737523}
+  keyImageShadow3: {fileID: 1750783821}
+  keyImage3: {fileID: 1118897668}
+  keyImageShadow4: {fileID: 1216910549}
+  keyImage4: {fileID: 1121766985}
+  keyImageShadow5: {fileID: 658616345}
+  keyImage5: {fileID: 166754426}
+  keyImageShadow6: {fileID: 1316521173}
+  keyImage6: {fileID: 200135356}
+  keyImageShadow7: {fileID: 1978367641}
+  keyImage7: {fileID: 756898384}
+  keyImageShadow8: {fileID: 1488013328}
+  keyImage8: {fileID: 1522056343}
+  keyImageShadow9: {fileID: 1295924750}
+  keyImage9: {fileID: 649354372}
+  keyImageShadow10: {fileID: 1999549626}
+  keyImage10: {fileID: 910437046}
+  keyImageShadow11: {fileID: 346025937}
+  keyImage11: {fileID: 1889807844}
+  keyImageShadow12: {fileID: 1173396329}
+  keyImage12: {fileID: 1510940360}
+  keyImageShadow13: {fileID: 1654321014}
+  keyImage13: {fileID: 462462480}
+  keyImageShadow14: {fileID: 701805112}
+  keyImage14: {fileID: 1743413319}
+  keyImageShadow15: {fileID: 591087883}
+  keyImage15: {fileID: 1473034079}
 --- !u!4 &465446682
 Transform:
   m_ObjectHideFlags: 0
@@ -37280,15 +37310,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectPrefabs:
   - {fileID: 2066285372797770357, guid: bcacf570aa104084c817e68fd5fb860e, type: 3}
-  - {fileID: 3849281374753430515, guid: ed0b4f1f43497444caceb243293670a0, type: 3}
-  - {fileID: 4064637242174755184, guid: 7bfce61b4a9573d408d31bfcae933426, type: 3}
-  - {fileID: 5841780436148893625, guid: 2e1b78148eb05af45ade4e91b51e1cc3, type: 3}
-  - {fileID: 6773968374431305819, guid: 4f100b6c278d32e43852cfaab84edd09, type: 3}
-  - {fileID: 928539669048523603, guid: 78cdb2190fc47c34ca80a20c646f8f28, type: 3}
-  - {fileID: 1885743491022835776, guid: 6868c2c27cfb29840bef94725f4f8a43, type: 3}
-  - {fileID: 8290027225585869354, guid: 7724f318965a7f84cab8fd95d3ee030d, type: 3}
-  - {fileID: 2456972079834170594, guid: 07d74519748ea5944b524f9674e06fbb, type: 3}
-  - {fileID: 5482068074322036649, guid: 1e011a62cf9553b499b916106a875267, type: 3}
+  - {fileID: 2066285372797770357, guid: bcacf570aa104084c817e68fd5fb860e, type: 3}
+  - {fileID: 2066285372797770357, guid: bcacf570aa104084c817e68fd5fb860e, type: 3}
   spawnPositions:
   - {fileID: 1996923234}
   - {fileID: 1506070743}
@@ -51123,15 +51146,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectPrefabs:
   - {fileID: 3098456625513669005, guid: 5bfc714dde20f4f4d98c7a2d6b033788, type: 3}
-  - {fileID: 7890597989597298975, guid: 31fec013725666b43ae374c2482fd261, type: 3}
-  - {fileID: 2245213258740555990, guid: c5333d38b5de4824996bf1fb73d8aa74, type: 3}
-  - {fileID: 3256159474328654112, guid: b6265efbeef87274194866422b0e26ac, type: 3}
-  - {fileID: 3899606501987031515, guid: 5e08fe22e54e07f43a3e5c3fa2b8f0e7, type: 3}
-  - {fileID: 7705146161979699626, guid: d2c3d90815c36a24985997a5313649bb, type: 3}
-  - {fileID: 2818432286938945104, guid: 9e15733393df3604dabfec94b563432b, type: 3}
-  - {fileID: 6978182501611410033, guid: 0c9571d9488ff0c4aa00a5a01dbe82c2, type: 3}
-  - {fileID: 2818432286938945104, guid: 9e15733393df3604dabfec94b563432b, type: 3}
-  - {fileID: 7705146161979699626, guid: d2c3d90815c36a24985997a5313649bb, type: 3}
+  - {fileID: 3098456625513669005, guid: 5bfc714dde20f4f4d98c7a2d6b033788, type: 3}
+  - {fileID: 3098456625513669005, guid: 5bfc714dde20f4f4d98c7a2d6b033788, type: 3}
+  - {fileID: 3098456625513669005, guid: 5bfc714dde20f4f4d98c7a2d6b033788, type: 3}
+  - {fileID: 3098456625513669005, guid: 5bfc714dde20f4f4d98c7a2d6b033788, type: 3}
   spawnPositions:
   - {fileID: 1553871478}
   - {fileID: 2129472268}

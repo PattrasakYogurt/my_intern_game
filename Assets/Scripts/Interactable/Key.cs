@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class Key : MonoBehaviour, IInteractable
 {
     [SerializeField] private AudioSource keySound;
-    [SerializeField] private Image keyImageShadow;
-    [SerializeField] private Image keyImage;
+    //[SerializeField] private Image keyImageShadow;
+    //[SerializeField] private Image keyImage;
     public string GetInteractionText()
     {
         return "Press E to collect";
@@ -17,8 +17,8 @@ public class Key : MonoBehaviour, IInteractable
     {
         GameManager.instance.keyObtained += 1;       
         keySound.Play();
-        keyImageShadow.enabled = false;
-        keyImage.enabled = true;
+       // keyImageShadow.enabled = false;
+       // keyImage.enabled = true;
         Destroy(gameObject, 1f);
     }
 
