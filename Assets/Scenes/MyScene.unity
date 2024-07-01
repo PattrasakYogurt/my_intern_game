@@ -358,7 +358,7 @@ Transform:
   - {fileID: 882933898}
   - {fileID: 1703842632}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &17902917
 GameObject:
@@ -509,7 +509,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -715.42, z: 159.469}
 --- !u!1001 &19471362
 PrefabInstance:
@@ -597,6 +597,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Shelf_04 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6296046844525105566, guid: ea2691cad5d8e2443b99357d4e99ad33,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6641645702467488548, guid: ea2691cad5d8e2443b99357d4e99ad33,
         type: 3}
@@ -956,6 +961,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 9c1cf82bc726dc047a91b16c03e504e4,
         type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 9c1cf82bc726dc047a91b16c03e504e4,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -1128,6 +1138,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 60c83b7b7f769604f8cec711a9209bbd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60c83b7b7f769604f8cec711a9209bbd, type: 3}
 --- !u!4 &31531437 stripped
@@ -1212,6 +1227,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T2 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8670548f19af7df41ac0ad4e3b3e48fe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8670548f19af7df41ac0ad4e3b3e48fe, type: 3}
@@ -1302,6 +1322,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T3 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9044a3ca346bf2a4db74e8c6a6ad5301, type: 3}
@@ -1497,7 +1522,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 57043490}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.1, y: -0.34, z: -202.3}
+  m_LocalPosition: {x: 15.1, y: -0.4, z: -202.3}
   m_LocalScale: {x: 12.749405, y: 0.80735373, z: 12}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1516,8 +1541,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3acbc2b97aeaf124b947a0e66bf1b4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reducedSpeed: 2
-  normalSpeed: 7
+  reducedSpeed: 3
+  normalSpeed: 5
 --- !u!1001 &58320184
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1652,7 +1677,7 @@ Transform:
   - {fileID: 1394457935}
   - {fileID: 362316057}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &69809967
 PrefabInstance:
@@ -1814,8 +1839,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Music Volume
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7044af0e8f894e64ba037c7b95bb3b1e, type: 2}
+  m_sharedMaterial: {fileID: 1007221958085958767, guid: 7044af0e8f894e64ba037c7b95bb3b1e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2271,8 +2297,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: YOU WIN!!!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7044af0e8f894e64ba037c7b95bb3b1e, type: 2}
+  m_sharedMaterial: {fileID: 1007221958085958767, guid: 7044af0e8f894e64ba037c7b95bb3b1e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2605,7 +2632,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 88912824}
   m_LocalRotation: {x: 0.78008795, y: 0.5845387, z: -0.009418995, w: -0.22290948}
-  m_LocalPosition: {x: 154.58, y: 17, z: -76.66}
+  m_LocalPosition: {x: 154.58, y: 18, z: -76.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2744,7 +2771,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &93581742
 GameObject:
@@ -3061,6 +3088,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T4 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 60c83b7b7f769604f8cec711a9209bbd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60c83b7b7f769604f8cec711a9209bbd, type: 3}
@@ -3735,7 +3767,7 @@ Transform:
   - {fileID: 1620060364}
   - {fileID: 370634310}
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &134993478
 GameObject:
@@ -4066,7 +4098,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150149828}
   m_LocalRotation: {x: 0.78008795, y: 0.5845387, z: -0.009418995, w: -0.22290948}
-  m_LocalPosition: {x: 179.6, y: 17, z: -134.8}
+  m_LocalPosition: {x: 179.6, y: 18, z: -134.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4133,8 +4165,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: X
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7044af0e8f894e64ba037c7b95bb3b1e, type: 2}
+  m_sharedMaterial: {fileID: 1007221958085958767, guid: 7044af0e8f894e64ba037c7b95bb3b1e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4158,8 +4191,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 120
+  m_fontSizeBase: 120
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4444,15 +4477,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7044af0e8f894e64ba037c7b95bb3b1e, type: 2}
+  m_sharedMaterial: {fileID: 1007221958085958767, guid: 7044af0e8f894e64ba037c7b95bb3b1e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4469,8 +4503,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 130
+  m_fontSizeBase: 130
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4752,6 +4786,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T2 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8670548f19af7df41ac0ad4e3b3e48fe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8670548f19af7df41ac0ad4e3b3e48fe, type: 3}
 --- !u!4 &181736404 stripped
@@ -4979,7 +5018,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 197493852}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -23.9, y: 0, z: -207.2}
+  m_LocalPosition: {x: -23.9, y: 1.8, z: -207.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5073,6 +5112,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Wall_Red (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 315685c5d48cc264f9a2867ed313e94c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 315685c5d48cc264f9a2867ed313e94c,
         type: 3}
@@ -5517,8 +5561,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: SETTING
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7044af0e8f894e64ba037c7b95bb3b1e, type: 2}
+  m_sharedMaterial: {fileID: 1007221958085958767, guid: 7044af0e8f894e64ba037c7b95bb3b1e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5542,8 +5587,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
-  m_fontSizeBase: 80
+  m_fontSize: 130
+  m_fontSizeBase: 130
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6374,7 +6419,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -784.437, z: 159.469}
 --- !u!1 &232055596 stripped
 GameObject:
@@ -6465,6 +6510,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Wall_Red (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 315685c5d48cc264f9a2867ed313e94c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 315685c5d48cc264f9a2867ed313e94c,
         type: 3}
@@ -6594,7 +6644,7 @@ Transform:
   - {fileID: 489349764}
   - {fileID: 529106950}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &239300887
 GameObject:
@@ -6656,8 +6706,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: X
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7044af0e8f894e64ba037c7b95bb3b1e, type: 2}
+  m_sharedMaterial: {fileID: 1007221958085958767, guid: 7044af0e8f894e64ba037c7b95bb3b1e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6742,6 +6793,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Shelf_04 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6296046844525105566, guid: ea2691cad5d8e2443b99357d4e99ad33,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6641645702467488548, guid: ea2691cad5d8e2443b99357d4e99ad33,
         type: 3}
@@ -6932,6 +6988,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ToyShelf2_02 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301997733307174691, guid: 78c6b5c25efbc3f4f94b35e8fd79df71,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4301997733307174702, guid: 78c6b5c25efbc3f4f94b35e8fd79df71,
         type: 3}
@@ -7356,6 +7417,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T3 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9044a3ca346bf2a4db74e8c6a6ad5301, type: 3}
 --- !u!4 &263542475 stripped
@@ -7778,7 +7844,7 @@ Transform:
   - {fileID: 1495394419}
   - {fileID: 48430422}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &279497520
 GameObject:
@@ -7804,7 +7870,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 279497520}
   m_LocalRotation: {x: 0.78008795, y: 0.5845387, z: -0.009418995, w: -0.22290948}
-  m_LocalPosition: {x: 274.9, y: 17, z: -76.66}
+  m_LocalPosition: {x: 274.9, y: 18, z: -76.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7953,6 +8019,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Wall_Yellow (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 5dd4992c6c0ba394ea88e35e2d5246bc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 5dd4992c6c0ba394ea88e35e2d5246bc,
         type: 3}
@@ -8288,6 +8359,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Wall_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 9c1cf82bc726dc047a91b16c03e504e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 9c1cf82bc726dc047a91b16c03e504e4,
         type: 3}
@@ -9340,6 +9416,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 5dd4992c6c0ba394ea88e35e2d5246bc,
         type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 5dd4992c6c0ba394ea88e35e2d5246bc,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -9526,6 +9607,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Shelf_01_T2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7679006721092980432, guid: e37c868a178095b48a2945f30925feb1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7679006721092980432, guid: e37c868a178095b48a2945f30925feb1,
         type: 3}
@@ -10081,6 +10167,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 84b25e3140262274d860bf59d7be5420,
         type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 84b25e3140262274d860bf59d7be5420,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -10192,6 +10283,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Wall_Purple (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 7c394aec2cd786b4ca641326f3802fcf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 7c394aec2cd786b4ca641326f3802fcf,
         type: 3}
@@ -10371,6 +10467,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T2 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8670548f19af7df41ac0ad4e3b3e48fe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8670548f19af7df41ac0ad4e3b3e48fe, type: 3}
@@ -10580,7 +10681,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 366697234}
   m_LocalRotation: {x: 0.78008795, y: 0.5845387, z: -0.009418995, w: -0.22290948}
-  m_LocalPosition: {x: 199.68, y: 17, z: -120.2}
+  m_LocalPosition: {x: 204.3, y: 18, z: -120.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11516,8 +11617,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3acbc2b97aeaf124b947a0e66bf1b4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reducedSpeed: 2
-  normalSpeed: 7
+  reducedSpeed: 3
+  normalSpeed: 5
 --- !u!65 &385878298
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11592,6 +11693,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ToyTurnal (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817965088651313073, guid: a8c51f5c9b414134ea5915a706e53575,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4817965088651313073, guid: a8c51f5c9b414134ea5915a706e53575,
         type: 3}
@@ -11957,8 +12063,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Find and push the box that color match the stand
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7044af0e8f894e64ba037c7b95bb3b1e, type: 2}
+  m_sharedMaterial: {fileID: 1007221958085958767, guid: 7044af0e8f894e64ba037c7b95bb3b1e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12529,6 +12636,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7679006721092980432, guid: f02e7527fe605384e9d0c8fc4c044fab,
         type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7679006721092980432, guid: f02e7527fe605384e9d0c8fc4c044fab,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -12829,6 +12941,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Wall_Purple (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 7c394aec2cd786b4ca641326f3802fcf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 7c394aec2cd786b4ca641326f3802fcf,
         type: 3}
@@ -13210,6 +13327,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T4 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 60c83b7b7f769604f8cec711a9209bbd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60c83b7b7f769604f8cec711a9209bbd, type: 3}
 --- !u!4 &431243763 stripped
@@ -13432,7 +13554,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 435628729}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 56.7, y: 0, z: -136.9}
+  m_LocalPosition: {x: 56.7, y: 1.8, z: -136.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13644,6 +13766,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 5dd4992c6c0ba394ea88e35e2d5246bc,
         type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 5dd4992c6c0ba394ea88e35e2d5246bc,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -13800,6 +13927,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Shelf_03_T2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3285377151685411646, guid: e2153e264523a35499babddaa14d9000,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3934172918728844011, guid: e2153e264523a35499babddaa14d9000,
         type: 3}
@@ -13998,7 +14130,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 456804651}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -38, y: -0.34, z: -143.2}
+  m_LocalPosition: {x: -38, y: -0.4, z: -143.2}
   m_LocalScale: {x: 12.749405, y: 0.80735373, z: 12}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -14017,8 +14149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3acbc2b97aeaf124b947a0e66bf1b4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reducedSpeed: 2
-  normalSpeed: 7
+  reducedSpeed: 3
+  normalSpeed: 5
 --- !u!65 &456804654
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14224,6 +14356,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ToyShelf2_03 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3517005048811522059, guid: d77e55e2ee7eb4c429c59f665001e767,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3517005048811522060, guid: d77e55e2ee7eb4c429c59f665001e767,
         type: 3}
@@ -14574,7 +14711,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &468208132
 PrefabInstance:
@@ -14657,6 +14794,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T3 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9044a3ca346bf2a4db74e8c6a6ad5301, type: 3}
@@ -15282,7 +15424,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 475860119}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -37, y: 0, z: -153.5}
+  m_LocalPosition: {x: -37, y: 1.8, z: -153.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15560,6 +15702,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9044a3ca346bf2a4db74e8c6a6ad5301, type: 3}
 --- !u!4 &480143390 stripped
@@ -15592,7 +15739,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 481111103}
   m_LocalRotation: {x: 0.78008795, y: 0.5845387, z: -0.009418995, w: -0.22290948}
-  m_LocalPosition: {x: 181.9, y: 17, z: -124.5}
+  m_LocalPosition: {x: 181.9, y: 20, z: -124.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15732,7 +15879,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 486338719}
   m_LocalRotation: {x: 0.78008795, y: 0.5845387, z: -0.009418995, w: -0.22290948}
-  m_LocalPosition: {x: 164.8, y: 17, z: -132.7}
+  m_LocalPosition: {x: 164.8, y: 18, z: -136.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16228,6 +16375,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Wall_Purple (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 7c394aec2cd786b4ca641326f3802fcf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 7c394aec2cd786b4ca641326f3802fcf,
         type: 3}
@@ -16952,7 +17104,7 @@ Transform:
   - {fileID: 591578948}
   - {fileID: 197493853}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &517963257
 MonoBehaviour:
@@ -17034,7 +17186,7 @@ Transform:
   - {fileID: 198361978179705790}
   - {fileID: 198361978658973532}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &529106949
 GameObject:
@@ -17367,6 +17519,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 315685c5d48cc264f9a2867ed313e94c,
         type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 315685c5d48cc264f9a2867ed313e94c,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -17643,6 +17800,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Shelf_03_T2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3285377151685411646, guid: e2153e264523a35499babddaa14d9000,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3934172918728844011, guid: e2153e264523a35499babddaa14d9000,
         type: 3}
@@ -17950,7 +18112,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 559545619}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.2, y: -0.34, z: -99.4}
+  m_LocalPosition: {x: 9.2, y: -0.4, z: -99.4}
   m_LocalScale: {x: 12.749405, y: 0.80735373, z: 12}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -17969,8 +18131,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3acbc2b97aeaf124b947a0e66bf1b4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reducedSpeed: 2
-  normalSpeed: 7
+  reducedSpeed: 3
+  normalSpeed: 5
 --- !u!65 &559545622
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18658,6 +18820,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8230a448a647ca44984e5b88105a7747,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8230a448a647ca44984e5b88105a7747, type: 3}
 --- !u!4 &573402156 stripped
@@ -18866,6 +19033,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 84b25e3140262274d860bf59d7be5420,
         type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 84b25e3140262274d860bf59d7be5420,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -19054,6 +19226,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ToyShelf2_02 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4301997733307174691, guid: 78c6b5c25efbc3f4f94b35e8fd79df71,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4301997733307174702, guid: 78c6b5c25efbc3f4f94b35e8fd79df71,
         type: 3}
       propertyPath: m_RootOrder
@@ -19197,8 +19374,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Grab the box that color match with the stand
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7044af0e8f894e64ba037c7b95bb3b1e, type: 2}
+  m_sharedMaterial: {fileID: 1007221958085958767, guid: 7044af0e8f894e64ba037c7b95bb3b1e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -19222,8 +19400,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 120
-  m_fontSizeBase: 120
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -19373,7 +19551,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 591578947}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -58.1, y: 0, z: -178}
+  m_LocalPosition: {x: -58.1, y: 1.8, z: -178}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20539,6 +20717,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T2 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8670548f19af7df41ac0ad4e3b3e48fe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8670548f19af7df41ac0ad4e3b3e48fe, type: 3}
 --- !u!4 &628773496 stripped
@@ -20969,7 +21152,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 634720161}
   m_LocalRotation: {x: 0.78008795, y: 0.5845387, z: -0.009418995, w: -0.22290948}
-  m_LocalPosition: {x: 309.1, y: 17, z: -72.2}
+  m_LocalPosition: {x: 309.1, y: 18, z: -72.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21036,15 +21219,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Objective
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7044af0e8f894e64ba037c7b95bb3b1e, type: 2}
+  m_sharedMaterial: {fileID: 1007221958085958767, guid: 7044af0e8f894e64ba037c7b95bb3b1e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -21188,6 +21372,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T4 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 60c83b7b7f769604f8cec711a9209bbd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60c83b7b7f769604f8cec711a9209bbd, type: 3}
 --- !u!4 &638635751 stripped
@@ -21292,6 +21481,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Wall_Blue (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 9c1cf82bc726dc047a91b16c03e504e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 9c1cf82bc726dc047a91b16c03e504e4,
         type: 3}
@@ -21637,6 +21831,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T3 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9044a3ca346bf2a4db74e8c6a6ad5301, type: 3}
@@ -22342,6 +22541,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T4 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 60c83b7b7f769604f8cec711a9209bbd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60c83b7b7f769604f8cec711a9209bbd, type: 3}
 --- !u!4 &665540138 stripped
@@ -22361,6 +22565,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Wall_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 84b25e3140262274d860bf59d7be5420,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 84b25e3140262274d860bf59d7be5420,
         type: 3}
@@ -22497,7 +22706,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 674376827}
   m_LocalRotation: {x: 0.78008795, y: 0.5845387, z: -0.009418995, w: -0.22290948}
-  m_LocalPosition: {x: 211.6, y: 17, z: -139}
+  m_LocalPosition: {x: 211.6, y: 20, z: -139}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23427,7 +23636,7 @@ Transform:
   - {fileID: 1414104529}
   - {fileID: 1164198144}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &696400490
 GameObject:
@@ -23949,6 +24158,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T2 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8670548f19af7df41ac0ad4e3b3e48fe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8670548f19af7df41ac0ad4e3b3e48fe, type: 3}
 --- !u!4 &706603032 stripped
@@ -24038,6 +24252,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T3 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9044a3ca346bf2a4db74e8c6a6ad5301, type: 3}
@@ -24273,6 +24492,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T3 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9044a3ca346bf2a4db74e8c6a6ad5301, type: 3}
@@ -24814,8 +25038,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Graphics
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7044af0e8f894e64ba037c7b95bb3b1e, type: 2}
+  m_sharedMaterial: {fileID: 1007221958085958767, guid: 7044af0e8f894e64ba037c7b95bb3b1e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -25012,8 +25237,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: X
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7044af0e8f894e64ba037c7b95bb3b1e, type: 2}
+  m_sharedMaterial: {fileID: 1007221958085958767, guid: 7044af0e8f894e64ba037c7b95bb3b1e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -25164,6 +25390,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8670548f19af7df41ac0ad4e3b3e48fe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8670548f19af7df41ac0ad4e3b3e48fe, type: 3}
 --- !u!4 &744413146 stripped
@@ -25238,15 +25469,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7044af0e8f894e64ba037c7b95bb3b1e, type: 2}
+  m_sharedMaterial: {fileID: 1007221958085958767, guid: 7044af0e8f894e64ba037c7b95bb3b1e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -26235,6 +26467,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 84b25e3140262274d860bf59d7be5420,
         type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 84b25e3140262274d860bf59d7be5420,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -26801,8 +27038,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Voice Volume
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7044af0e8f894e64ba037c7b95bb3b1e, type: 2}
+  m_sharedMaterial: {fileID: 1007221958085958767, guid: 7044af0e8f894e64ba037c7b95bb3b1e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -27532,7 +27770,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804022045}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -40.4, y: -0.34, z: -163.6}
+  m_LocalPosition: {x: -40.4, y: -0.4, z: -163.6}
   m_LocalScale: {x: 12.749405, y: 0.80735373, z: 12}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -27551,8 +27789,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3acbc2b97aeaf124b947a0e66bf1b4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reducedSpeed: 2
-  normalSpeed: 7
+  reducedSpeed: 3
+  normalSpeed: 5
 --- !u!65 &804022048
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27693,6 +27931,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T4 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 60c83b7b7f769604f8cec711a9209bbd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60c83b7b7f769604f8cec711a9209bbd, type: 3}
 --- !u!4 &804395435 stripped
@@ -27725,7 +27968,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 805914436}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.2, y: 0, z: -96.4}
+  m_LocalPosition: {x: -2.2, y: 1.8, z: -96.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28612,7 +28855,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824022179}
   m_LocalRotation: {x: 0.78008795, y: 0.5845387, z: -0.009418995, w: -0.22290948}
-  m_LocalPosition: {x: 212.8, y: 17, z: -101.3}
+  m_LocalPosition: {x: 212.8, y: 20, z: -101.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28695,6 +28938,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8670548f19af7df41ac0ad4e3b3e48fe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8670548f19af7df41ac0ad4e3b3e48fe, type: 3}
@@ -28781,6 +29029,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T3 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9044a3ca346bf2a4db74e8c6a6ad5301, type: 3}
 --- !u!4 &832406374 stripped
@@ -28836,7 +29089,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &834568708
 GameObject:
@@ -29098,7 +29351,7 @@ RectTransform:
   - {fileID: 422166143}
   - {fileID: 382657318}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -29354,8 +29607,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: YOU LOOSE!!!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7044af0e8f894e64ba037c7b95bb3b1e, type: 2}
+  m_sharedMaterial: {fileID: 1007221958085958767, guid: 7044af0e8f894e64ba037c7b95bb3b1e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -29440,6 +29694,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ToyShelf2_03 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3517005048811522059, guid: d77e55e2ee7eb4c429c59f665001e767,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3517005048811522060, guid: d77e55e2ee7eb4c429c59f665001e767,
         type: 3}
@@ -29640,6 +29899,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Wall_Red (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 315685c5d48cc264f9a2867ed313e94c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 315685c5d48cc264f9a2867ed313e94c,
         type: 3}
@@ -29870,7 +30134,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 20}
+  m_SizeDelta: {x: 10, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &860487927
 MonoBehaviour:
@@ -30217,6 +30481,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T3 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9044a3ca346bf2a4db74e8c6a6ad5301, type: 3}
@@ -30670,6 +30939,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 84b25e3140262274d860bf59d7be5420,
         type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 84b25e3140262274d860bf59d7be5420,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -31042,6 +31316,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8230a448a647ca44984e5b88105a7747,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8230a448a647ca44984e5b88105a7747, type: 3}
@@ -32067,7 +32346,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 914694326}
   m_LocalRotation: {x: 0.78008795, y: 0.5845387, z: -0.009418995, w: -0.22290948}
-  m_LocalPosition: {x: 291.9, y: 17, z: -80.9}
+  m_LocalPosition: {x: 291.9, y: 18, z: -80.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32260,8 +32539,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: RESUME GAME
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7044af0e8f894e64ba037c7b95bb3b1e, type: 2}
+  m_sharedMaterial: {fileID: 1007221958085958767, guid: 7044af0e8f894e64ba037c7b95bb3b1e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -32285,8 +32565,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
-  m_fontSizeBase: 80
+  m_fontSize: 90
+  m_fontSizeBase: 90
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -32499,7 +32779,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 928472838}
   m_LocalRotation: {x: 0.78008795, y: 0.5845387, z: -0.009418995, w: -0.22290948}
-  m_LocalPosition: {x: 174.6, y: 17, z: -76.66}
+  m_LocalPosition: {x: 174.6, y: 20, z: -76.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32582,6 +32862,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T3 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9044a3ca346bf2a4db74e8c6a6ad5301, type: 3}
@@ -33061,7 +33346,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 951294381}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -30, y: -0.34, z: -208.8}
+  m_LocalPosition: {x: -30, y: -0.4, z: -208.8}
   m_LocalScale: {x: 12.749405, y: 0.80735373, z: 12}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -33080,8 +33365,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3acbc2b97aeaf124b947a0e66bf1b4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reducedSpeed: 2
-  normalSpeed: 7
+  reducedSpeed: 3
+  normalSpeed: 5
 --- !u!65 &951294384
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33221,6 +33506,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8670548f19af7df41ac0ad4e3b3e48fe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8670548f19af7df41ac0ad4e3b3e48fe, type: 3}
@@ -33430,6 +33720,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T3 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9044a3ca346bf2a4db74e8c6a6ad5301, type: 3}
@@ -33937,7 +34232,7 @@ Transform:
   - {fileID: 1034115650}
   - {fileID: 625730323}
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &984626768 stripped
 GameObject:
@@ -34088,7 +34383,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 986803594}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.9, y: 0, z: -137.8}
+  m_LocalPosition: {x: 3.9, y: 1.8, z: -137.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34327,7 +34622,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 231.1001, y: -87.01172}
+  m_AnchoredPosition: {x: 231.1001, y: -87.0115}
   m_SizeDelta: {x: 500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &992840611
@@ -34352,8 +34647,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Master Volume
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7044af0e8f894e64ba037c7b95bb3b1e, type: 2}
+  m_sharedMaterial: {fileID: 1007221958085958767, guid: 7044af0e8f894e64ba037c7b95bb3b1e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -34451,7 +34747,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 997283652}
   m_LocalRotation: {x: 0.78008795, y: 0.5845387, z: -0.009418995, w: -0.22290948}
-  m_LocalPosition: {x: 308, y: 17, z: -94.3}
+  m_LocalPosition: {x: 308, y: 18, z: -94.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34663,8 +34959,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "-Press \" E \" to grab \n-Press \" E \" to release"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7044af0e8f894e64ba037c7b95bb3b1e, type: 2}
+  m_sharedMaterial: {fileID: 1007221958085958767, guid: 7044af0e8f894e64ba037c7b95bb3b1e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -34688,8 +34985,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 120
-  m_fontSizeBase: 120
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -34749,6 +35046,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ToyTurnal (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817965088651313073, guid: a8c51f5c9b414134ea5915a706e53575,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4817965088651313073, guid: a8c51f5c9b414134ea5915a706e53575,
         type: 3}
@@ -34880,6 +35182,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ToyShelf2_02 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4301997733307174691, guid: 78c6b5c25efbc3f4f94b35e8fd79df71,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4301997733307174702, guid: 78c6b5c25efbc3f4f94b35e8fd79df71,
         type: 3}
       propertyPath: m_RootOrder
@@ -35002,7 +35309,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010778957}
   m_LocalRotation: {x: 0.78008795, y: 0.5845387, z: -0.009418995, w: -0.22290948}
-  m_LocalPosition: {x: 167.7, y: 17, z: -115.4}
+  m_LocalPosition: {x: 167.7, y: 20, z: -115.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -35033,7 +35340,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1015252521}
   m_LocalRotation: {x: 0.78008795, y: 0.5845387, z: -0.009418995, w: -0.22290948}
-  m_LocalPosition: {x: 205.3, y: 17, z: -114.3}
+  m_LocalPosition: {x: 198.8, y: 20, z: -114.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -35195,8 +35502,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Sound Setting
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7044af0e8f894e64ba037c7b95bb3b1e, type: 2}
+  m_sharedMaterial: {fileID: 1007221958085958767, guid: 7044af0e8f894e64ba037c7b95bb3b1e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -35346,6 +35654,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T3 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9044a3ca346bf2a4db74e8c6a6ad5301, type: 3}
@@ -35978,7 +36291,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1040366410
 GameObject:
@@ -36489,7 +36802,7 @@ PrefabInstance:
     - target: {fileID: 3462049462216242545, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.4118999
+      value: 1.103541
       objectReference: {fileID: 0}
     - target: {fileID: 3462049462216242545, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
         type: 3}
@@ -36509,7 +36822,7 @@ PrefabInstance:
     - target: {fileID: 3462049462216242545, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -88.1269
+      value: -90.9019
       objectReference: {fileID: 0}
     - target: {fileID: 3462049462216242545, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
         type: 3}
@@ -36550,6 +36863,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T3 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9044a3ca346bf2a4db74e8c6a6ad5301, type: 3}
@@ -37048,7 +37366,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1071699216}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 55.4, y: -0.34, z: -159.5}
+  m_LocalPosition: {x: 55.4, y: -0.4, z: -159.5}
   m_LocalScale: {x: 12.749405, y: 0.80735373, z: 12}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -37067,8 +37385,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3acbc2b97aeaf124b947a0e66bf1b4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reducedSpeed: 2
-  normalSpeed: 7
+  reducedSpeed: 3
+  normalSpeed: 5
 --- !u!65 &1071699219
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37432,6 +37750,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ToyShelf2_03 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3517005048811522059, guid: d77e55e2ee7eb4c429c59f665001e767,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3517005048811522060, guid: d77e55e2ee7eb4c429c59f665001e767,
         type: 3}
       propertyPath: m_RootOrder
@@ -37571,7 +37894,7 @@ Transform:
   - {fileID: 328682163}
   - {fileID: 1374711453}
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1083513456
 GameObject:
@@ -37991,7 +38314,7 @@ Transform:
   - {fileID: 1431945575}
   - {fileID: 990747223}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1114064896
 PrefabInstance:
@@ -38004,6 +38327,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Shelf_04 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6296046844525105566, guid: ea2691cad5d8e2443b99357d4e99ad33,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6641645702467488548, guid: ea2691cad5d8e2443b99357d4e99ad33,
         type: 3}
@@ -38873,6 +39201,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 315685c5d48cc264f9a2867ed313e94c,
         type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 315685c5d48cc264f9a2867ed313e94c,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -39466,6 +39799,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Wall_Yellow (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 5dd4992c6c0ba394ea88e35e2d5246bc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 5dd4992c6c0ba394ea88e35e2d5246bc,
         type: 3}
@@ -41292,7 +41630,7 @@ Transform:
   - {fileID: 1569211924}
   - {fileID: 675836205}
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1175077430
 GameObject:
@@ -41318,7 +41656,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1175077430}
   m_LocalRotation: {x: 0.78008795, y: 0.5845387, z: -0.009418995, w: -0.22290948}
-  m_LocalPosition: {x: 185.3, y: 17, z: -96.7}
+  m_LocalPosition: {x: 185.3, y: 18, z: -96.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41450,6 +41788,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ToyTurnal (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817965088651313073, guid: a8c51f5c9b414134ea5915a706e53575,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4817965088651313073, guid: a8c51f5c9b414134ea5915a706e53575,
         type: 3}
@@ -41620,6 +41963,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8230a448a647ca44984e5b88105a7747,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8230a448a647ca44984e5b88105a7747, type: 3}
@@ -42200,6 +42548,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Toy_Shelf_03_T1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3285377151685411646, guid: 295bc6e98970d3a4fb45f1dff2a7e7fc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 295bc6e98970d3a4fb45f1dff2a7e7fc, type: 3}
 --- !u!4 &1197089133 stripped
@@ -42294,6 +42647,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Shelf_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7679006721092980432, guid: 78e4ffc602cfdc74abad8513d23ebdfc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7679006721092980432, guid: 78e4ffc602cfdc74abad8513d23ebdfc,
         type: 3}
@@ -42460,7 +42818,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1218235913}
   m_LocalRotation: {x: 0.78008795, y: 0.5845387, z: -0.009418995, w: -0.22290948}
-  m_LocalPosition: {x: 253.4, y: 17, z: -93.1}
+  m_LocalPosition: {x: 253.4, y: 18, z: -93.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42560,8 +42918,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Collect 7 keys and escape from this house
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7044af0e8f894e64ba037c7b95bb3b1e, type: 2}
+  m_sharedMaterial: {fileID: 1007221958085958767, guid: 7044af0e8f894e64ba037c7b95bb3b1e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -42717,6 +43076,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8670548f19af7df41ac0ad4e3b3e48fe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8670548f19af7df41ac0ad4e3b3e48fe, type: 3}
@@ -43718,6 +44082,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 9c1cf82bc726dc047a91b16c03e504e4,
         type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 9c1cf82bc726dc047a91b16c03e504e4,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -44679,6 +45048,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T3 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9044a3ca346bf2a4db74e8c6a6ad5301, type: 3}
 --- !u!4 &1280844296 stripped
@@ -44747,8 +45121,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: EXIT GAME
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7044af0e8f894e64ba037c7b95bb3b1e, type: 2}
+  m_sharedMaterial: {fileID: 1007221958085958767, guid: 7044af0e8f894e64ba037c7b95bb3b1e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -44772,8 +45147,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
-  m_fontSizeBase: 80
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -44899,6 +45274,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T3
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9044a3ca346bf2a4db74e8c6a6ad5301, type: 3}
 --- !u!4 &1284791765 stripped
@@ -44918,6 +45298,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Wall_Blue (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 9c1cf82bc726dc047a91b16c03e504e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 9c1cf82bc726dc047a91b16c03e504e4,
         type: 3}
@@ -45174,6 +45559,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8670548f19af7df41ac0ad4e3b3e48fe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8670548f19af7df41ac0ad4e3b3e48fe, type: 3}
 --- !u!4 &1293380685 stripped
@@ -45407,7 +45797,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1310521706}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.5, y: 0, z: -140.3}
+  m_LocalPosition: {x: -18.5, y: 1.8, z: -140.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45519,7 +45909,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1325578803}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.81, y: -0.34, z: -160.26}
+  m_LocalPosition: {x: 19.81, y: -0.4, z: -160.26}
   m_LocalScale: {x: 12.749405, y: 0.80735373, z: 12}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -45538,8 +45928,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3acbc2b97aeaf124b947a0e66bf1b4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reducedSpeed: 2
-  normalSpeed: 7
+  reducedSpeed: 3
+  normalSpeed: 5
 --- !u!65 &1325578806
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45689,6 +46079,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ToyShelf2_02 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301997733307174691, guid: 78c6b5c25efbc3f4f94b35e8fd79df71,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4301997733307174702, guid: 78c6b5c25efbc3f4f94b35e8fd79df71,
         type: 3}
@@ -45914,7 +46309,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 24}
-  m_SizeDelta: {x: 1000, y: 500}
+  m_SizeDelta: {x: 1300, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1334812001
 MonoBehaviour:
@@ -45938,8 +46333,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: This is fake door
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7044af0e8f894e64ba037c7b95bb3b1e, type: 2}
+  m_sharedMaterial: {fileID: 1007221958085958767, guid: 7044af0e8f894e64ba037c7b95bb3b1e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -45963,8 +46359,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
-  m_fontSizeBase: 80
+  m_fontSize: 130
+  m_fontSizeBase: 130
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -46024,6 +46420,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Wall_Green (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 84b25e3140262274d860bf59d7be5420,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 84b25e3140262274d860bf59d7be5420,
         type: 3}
@@ -46475,7 +46876,7 @@ Transform:
   - {fileID: 914694327}
   - {fileID: 634720162}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1364087356
 PrefabInstance:
@@ -46563,6 +46964,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Shelf_01_T2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7679006721092980432, guid: e37c868a178095b48a2945f30925feb1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7679006721092980432, guid: e37c868a178095b48a2945f30925feb1,
         type: 3}
@@ -47791,6 +48197,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8670548f19af7df41ac0ad4e3b3e48fe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8670548f19af7df41ac0ad4e3b3e48fe, type: 3}
 --- !u!4 &1395510650 stripped
@@ -48157,6 +48568,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T2 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8670548f19af7df41ac0ad4e3b3e48fe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8670548f19af7df41ac0ad4e3b3e48fe, type: 3}
@@ -48574,6 +48990,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T3 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9044a3ca346bf2a4db74e8c6a6ad5301, type: 3}
@@ -49169,6 +49590,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T2 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8670548f19af7df41ac0ad4e3b3e48fe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8670548f19af7df41ac0ad4e3b3e48fe, type: 3}
 --- !u!4 &1439298621 stripped
@@ -49242,7 +49668,7 @@ Transform:
   - {fileID: 926193170}
   - {fileID: 1231019628}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1451043090
 PrefabInstance:
@@ -49643,6 +50069,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8230a448a647ca44984e5b88105a7747,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8230a448a647ca44984e5b88105a7747, type: 3}
 --- !u!4 &1461324814 stripped
@@ -49690,7 +50121,7 @@ Transform:
   - {fileID: 1325578804}
   - {fileID: 385878296}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1463297209
 PrefabInstance:
@@ -49797,7 +50228,7 @@ PrefabInstance:
     - target: {fileID: 3462049462216242545, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.9193
       objectReference: {fileID: 0}
     - target: {fileID: 3462049462216242545, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
         type: 3}
@@ -49817,7 +50248,7 @@ PrefabInstance:
     - target: {fileID: 3462049462216242545, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -222.42
+      value: -221.6939
       objectReference: {fileID: 0}
     - target: {fileID: 3462049462216242545, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
         type: 3}
@@ -49859,6 +50290,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T3 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9044a3ca346bf2a4db74e8c6a6ad5301, type: 3}
 --- !u!4 &1465267381 stripped
@@ -49891,7 +50327,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1468257503}
   m_LocalRotation: {x: 0.78008795, y: 0.5845387, z: -0.009418995, w: -0.22290948}
-  m_LocalPosition: {x: 293.2, y: 17, z: -134.8}
+  m_LocalPosition: {x: 293.2, y: 18, z: -134.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -50350,6 +50786,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T4 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 60c83b7b7f769604f8cec711a9209bbd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60c83b7b7f769604f8cec711a9209bbd, type: 3}
 --- !u!4 &1491863870 stripped
@@ -50435,6 +50876,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T3 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9044a3ca346bf2a4db74e8c6a6ad5301, type: 3}
 --- !u!4 &1492413455 stripped
@@ -50467,7 +50913,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1492450533}
   m_LocalRotation: {x: 0.78008795, y: 0.5845387, z: -0.009418995, w: -0.22290948}
-  m_LocalPosition: {x: 198.8, y: 17, z: -68.7}
+  m_LocalPosition: {x: 198.8, y: 20, z: -68.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -50556,6 +51002,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T2 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8670548f19af7df41ac0ad4e3b3e48fe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8670548f19af7df41ac0ad4e3b3e48fe, type: 3}
 --- !u!4 &1495394419 stripped
@@ -50575,6 +51026,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ToyShelf2_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301997733307174691, guid: 78c6b5c25efbc3f4f94b35e8fd79df71,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4301997733307174702, guid: 78c6b5c25efbc3f4f94b35e8fd79df71,
         type: 3}
@@ -50812,6 +51268,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T2 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8670548f19af7df41ac0ad4e3b3e48fe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8670548f19af7df41ac0ad4e3b3e48fe, type: 3}
 --- !u!4 &1498196566 stripped
@@ -50968,7 +51429,7 @@ Transform:
   - {fileID: 756727125}
   - {fileID: 1895816949}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1506070742
 GameObject:
@@ -50994,7 +51455,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1506070742}
   m_LocalRotation: {x: 0.78008795, y: 0.5845387, z: -0.009418995, w: -0.22290948}
-  m_LocalPosition: {x: 253.1, y: 17, z: -131.1}
+  m_LocalPosition: {x: 253.1, y: 18, z: -131.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -51626,6 +52087,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T2 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8670548f19af7df41ac0ad4e3b3e48fe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8670548f19af7df41ac0ad4e3b3e48fe, type: 3}
 --- !u!4 &1520224536 stripped
@@ -51658,7 +52124,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1520853037}
   m_LocalRotation: {x: 0.78008795, y: 0.5845387, z: -0.009418995, w: -0.22290948}
-  m_LocalPosition: {x: 292, y: 17, z: -108.1}
+  m_LocalPosition: {x: 292, y: 18, z: -108.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -52091,6 +52557,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T4 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 60c83b7b7f769604f8cec711a9209bbd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60c83b7b7f769604f8cec711a9209bbd, type: 3}
 --- !u!4 &1537514673 stripped
@@ -52210,6 +52681,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Wall_Yellow (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 5dd4992c6c0ba394ea88e35e2d5246bc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 5dd4992c6c0ba394ea88e35e2d5246bc,
         type: 3}
@@ -52656,7 +53132,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1553058086}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.1, y: 4, z: -200.9}
+  m_LocalPosition: {x: 12.1, y: 1.8, z: -200.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -52687,7 +53163,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1553871477}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 199.68, y: 17, z: -76.66}
+  m_LocalPosition: {x: 199.68, y: 18, z: -76.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -52873,7 +53349,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1561018161}
   m_LocalRotation: {x: 0.78008795, y: 0.5845387, z: -0.009418995, w: -0.22290948}
-  m_LocalPosition: {x: 226.1, y: 17, z: -99.4}
+  m_LocalPosition: {x: 226.1, y: 20, z: -99.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -53329,6 +53805,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T4 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 60c83b7b7f769604f8cec711a9209bbd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60c83b7b7f769604f8cec711a9209bbd, type: 3}
 --- !u!4 &1570947302 stripped
@@ -53454,7 +53935,7 @@ Transform:
   m_Children:
   - {fileID: 1723793325}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 69.776, z: -90}
 --- !u!1 &1579240566
 GameObject:
@@ -53535,7 +54016,7 @@ Transform:
   - {fileID: 1015252522}
   - {fileID: 1492450534}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1584139335
 GameObject:
@@ -53680,6 +54161,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Wall_Green (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 84b25e3140262274d860bf59d7be5420,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 84b25e3140262274d860bf59d7be5420,
         type: 3}
@@ -53869,6 +54355,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Shelf_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7679006721092980432, guid: 78e4ffc602cfdc74abad8513d23ebdfc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7679006721092980432, guid: 78e4ffc602cfdc74abad8513d23ebdfc,
         type: 3}
@@ -54079,6 +54570,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8670548f19af7df41ac0ad4e3b3e48fe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8670548f19af7df41ac0ad4e3b3e48fe, type: 3}
@@ -54677,6 +55173,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Shelf_01_T3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7679006721092980432, guid: f02e7527fe605384e9d0c8fc4c044fab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7679006721092980432, guid: f02e7527fe605384e9d0c8fc4c044fab,
         type: 3}
@@ -55580,6 +56081,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ToyShelf2_03 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3517005048811522059, guid: d77e55e2ee7eb4c429c59f665001e767,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3517005048811522060, guid: d77e55e2ee7eb4c429c59f665001e767,
         type: 3}
       propertyPath: m_RootOrder
@@ -55803,7 +56309,7 @@ Transform:
   m_Children:
   - {fileID: 401853220}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1645948806
 GameObject:
@@ -55874,8 +56380,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3acbc2b97aeaf124b947a0e66bf1b4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reducedSpeed: 2
-  normalSpeed: 7
+  reducedSpeed: 3
+  normalSpeed: 5
 --- !u!65 &1646302323
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55947,7 +56453,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646302321}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 33.61, y: -0.34, z: -95.8}
+  m_LocalPosition: {x: 33.61, y: -0.4, z: -95.8}
   m_LocalScale: {x: 12, y: 0.40590662, z: 9.719787}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -56085,7 +56591,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 125}
-  m_SizeDelta: {x: 1000, y: 500}
+  m_SizeDelta: {x: 1500, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1654138796
 MonoBehaviour:
@@ -56109,8 +56615,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Need more keys to open
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7044af0e8f894e64ba037c7b95bb3b1e, type: 2}
+  m_sharedMaterial: {fileID: 1007221958085958767, guid: 7044af0e8f894e64ba037c7b95bb3b1e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -56134,8 +56641,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
-  m_fontSizeBase: 80
+  m_fontSize: 110
+  m_fontSizeBase: 110
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -56364,6 +56871,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Wall_Purple (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 7c394aec2cd786b4ca641326f3802fcf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 7c394aec2cd786b4ca641326f3802fcf,
         type: 3}
@@ -56671,7 +57183,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1665263462}
   m_LocalRotation: {x: 0.78008795, y: 0.5845387, z: -0.009418995, w: -0.22290948}
-  m_LocalPosition: {x: 154.4, y: 17, z: -79}
+  m_LocalPosition: {x: 154.4, y: 20, z: -79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -57221,6 +57733,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 5dd4992c6c0ba394ea88e35e2d5246bc,
         type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 5dd4992c6c0ba394ea88e35e2d5246bc,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -57698,6 +58215,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T2 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8670548f19af7df41ac0ad4e3b3e48fe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8670548f19af7df41ac0ad4e3b3e48fe, type: 3}
@@ -58201,15 +58723,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Puzzle #2
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7044af0e8f894e64ba037c7b95bb3b1e, type: 2}
+  m_sharedMaterial: {fileID: 1007221958085958767, guid: 7044af0e8f894e64ba037c7b95bb3b1e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -58226,8 +58749,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 150
-  m_fontSizeBase: 150
+  m_fontSize: 140
+  m_fontSizeBase: 140
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -59155,6 +59678,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 7c394aec2cd786b4ca641326f3802fcf,
         type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 7c394aec2cd786b4ca641326f3802fcf,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -59536,6 +60064,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T4
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 60c83b7b7f769604f8cec711a9209bbd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60c83b7b7f769604f8cec711a9209bbd, type: 3}
 --- !u!4 &1738640651 stripped
@@ -59836,7 +60369,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750813455}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 71.8, y: 0, z: -139.7}
+  m_LocalPosition: {x: 71.8, y: 1.8, z: -139.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -59970,7 +60503,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1206.0796, y: -87.762695}
+  m_AnchoredPosition: {x: 1206.0796, y: -87.7625}
   m_SizeDelta: {x: 1500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1764763215
@@ -60180,6 +60713,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e09e4a9648455634fa43e42a9a9e0726,
         type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e09e4a9648455634fa43e42a9a9e0726,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -60298,7 +60836,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1787212646
 PrefabInstance:
@@ -60311,6 +60849,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Wall_Purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 7c394aec2cd786b4ca641326f3802fcf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 7c394aec2cd786b4ca641326f3802fcf,
         type: 3}
@@ -60638,6 +61181,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Wall_Purple (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 7c394aec2cd786b4ca641326f3802fcf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 7c394aec2cd786b4ca641326f3802fcf,
         type: 3}
@@ -61174,6 +61722,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Toy_Shelf_03_T1
       objectReference: {fileID: 0}
+    - target: {fileID: 3285377151685411646, guid: 295bc6e98970d3a4fb45f1dff2a7e7fc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 295bc6e98970d3a4fb45f1dff2a7e7fc, type: 3}
 --- !u!4 &1820014017 stripped
@@ -61343,6 +61896,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e09e4a9648455634fa43e42a9a9e0726,
         type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e09e4a9648455634fa43e42a9a9e0726,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -61412,6 +61970,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ToyShelf2_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2706084369276699419, guid: ee63c87b752c33841a38cf8e3335c23b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2706084369276699422, guid: ee63c87b752c33841a38cf8e3335c23b,
         type: 3}
@@ -61854,6 +62417,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8670548f19af7df41ac0ad4e3b3e48fe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8670548f19af7df41ac0ad4e3b3e48fe, type: 3}
 --- !u!4 &1847401502 stripped
@@ -61873,6 +62441,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ToyTurnal (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817965088651313073, guid: a8c51f5c9b414134ea5915a706e53575,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4817965088651313073, guid: a8c51f5c9b414134ea5915a706e53575,
         type: 3}
@@ -61996,7 +62569,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850816283}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 226, y: 17, z: -68.7}
+  m_LocalPosition: {x: 226, y: 20, z: -68.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -62080,6 +62653,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T2
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8670548f19af7df41ac0ad4e3b3e48fe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8670548f19af7df41ac0ad4e3b3e48fe, type: 3}
 --- !u!4 &1851149942 stripped
@@ -62112,7 +62690,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1851271486}
   m_LocalRotation: {x: 0.78008795, y: 0.5845387, z: -0.009418995, w: -0.22290948}
-  m_LocalPosition: {x: 231, y: 17, z: -76.66}
+  m_LocalPosition: {x: 232, y: 18, z: -76.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -62195,6 +62773,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9044a3ca346bf2a4db74e8c6a6ad5301, type: 3}
@@ -62395,6 +62978,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T2 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8670548f19af7df41ac0ad4e3b3e48fe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8670548f19af7df41ac0ad4e3b3e48fe, type: 3}
@@ -62670,6 +63258,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7679006721092980432, guid: e37c868a178095b48a2945f30925feb1,
         type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7679006721092980432, guid: e37c868a178095b48a2945f30925feb1,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -62754,6 +63347,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3957782524123411102, guid: 59dff64ac84edb54d9e2e5f09c94db06,
         type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -3957782524123411102, guid: 59dff64ac84edb54d9e2e5f09c94db06,
+        type: 3}
       propertyPath: m_TagString
       value: IInteractable
       objectReference: {fileID: 0}
@@ -62761,6 +63359,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FakeDoor_07
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 59dff64ac84edb54d9e2e5f09c94db06,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 59dff64ac84edb54d9e2e5f09c94db06,
         type: 3}
@@ -62796,6 +63399,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455592603702852162, guid: 59dff64ac84edb54d9e2e5f09c94db06,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8455592603702852162, guid: 59dff64ac84edb54d9e2e5f09c94db06,
         type: 3}
@@ -62929,6 +63537,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Shelf_01_T3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7679006721092980432, guid: f02e7527fe605384e9d0c8fc4c044fab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7679006721092980432, guid: f02e7527fe605384e9d0c8fc4c044fab,
         type: 3}
@@ -63083,7 +63696,7 @@ Transform:
   - {fileID: 1956718759}
   - {fileID: 1175077431}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1881618305
 PrefabInstance:
@@ -64041,6 +64654,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T1
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8230a448a647ca44984e5b88105a7747,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8230a448a647ca44984e5b88105a7747, type: 3}
 --- !u!4 &1912469298 stripped
@@ -64368,7 +64986,7 @@ Transform:
   - {fileID: 1366028253}
   - {fileID: 1589603221}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1921774064
 GameObject:
@@ -64820,6 +65438,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T3 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9044a3ca346bf2a4db74e8c6a6ad5301, type: 3}
@@ -65321,6 +65944,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8230a448a647ca44984e5b88105a7747,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8230a448a647ca44984e5b88105a7747, type: 3}
 --- !u!4 &1955332762 stripped
@@ -65353,7 +65981,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1956718758}
   m_LocalRotation: {x: 0.78008795, y: 0.5845387, z: -0.009418995, w: -0.22290948}
-  m_LocalPosition: {x: 155.5, y: 17, z: -114.3}
+  m_LocalPosition: {x: 155.5, y: 18, z: -114.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -65702,7 +66330,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1969591281}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -70.1, y: -0.34, z: -115.46}
+  m_LocalPosition: {x: -70.1, y: -0.4, z: -115.46}
   m_LocalScale: {x: 12.749405, y: 0.80735373, z: 12}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -65721,8 +66349,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3acbc2b97aeaf124b947a0e66bf1b4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reducedSpeed: 2
-  normalSpeed: 7
+  reducedSpeed: 3
+  normalSpeed: 5
 --- !u!65 &1969591284
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65821,7 +66449,7 @@ Transform:
   - {fileID: 837467025}
   - {fileID: 755944537}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1971550185
 GameObject:
@@ -66025,7 +66653,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978328932}
   m_LocalRotation: {x: 0.78008795, y: 0.5845387, z: -0.009418995, w: -0.22290948}
-  m_LocalPosition: {x: 179.58, y: 17, z: -76.66}
+  m_LocalPosition: {x: 179.58, y: 18, z: -76.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -66374,15 +67002,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Puzzle #1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7044af0e8f894e64ba037c7b95bb3b1e, type: 2}
+  m_sharedMaterial: {fileID: 1007221958085958767, guid: 7044af0e8f894e64ba037c7b95bb3b1e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -66669,7 +67298,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1996923233}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 257.5, y: 17, z: -76.66}
+  m_LocalPosition: {x: 257.5, y: 18, z: -76.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -66785,7 +67414,7 @@ Transform:
   - {fileID: 1766299368}
   - {fileID: 1268116048}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2007160317
 PrefabInstance:
@@ -67014,6 +67643,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Toy_Shelf_04 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6296046844525105566, guid: ea2691cad5d8e2443b99357d4e99ad33,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6641645702467488548, guid: ea2691cad5d8e2443b99357d4e99ad33,
         type: 3}
       propertyPath: m_RootOrder
@@ -67169,6 +67803,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T4 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 60c83b7b7f769604f8cec711a9209bbd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60c83b7b7f769604f8cec711a9209bbd, type: 3}
 --- !u!4 &2010826238 stripped
@@ -67253,6 +67892,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T3 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9044a3ca346bf2a4db74e8c6a6ad5301, type: 3}
@@ -67710,7 +68354,7 @@ PrefabInstance:
     - target: {fileID: 3462049462216242545, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.2877957
+      value: 0.69425064
       objectReference: {fileID: 0}
     - target: {fileID: 3462049462216242545, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
         type: 3}
@@ -67730,7 +68374,7 @@ PrefabInstance:
     - target: {fileID: 3462049462216242545, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -82.0196
+      value: -87.361
       objectReference: {fileID: 0}
     - target: {fileID: 3462049462216242545, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
         type: 3}
@@ -67771,6 +68415,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T3 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9044a3ca346bf2a4db74e8c6a6ad5301, type: 3}
@@ -67857,6 +68506,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T2 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8670548f19af7df41ac0ad4e3b3e48fe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8670548f19af7df41ac0ad4e3b3e48fe, type: 3}
 --- !u!4 &2035751773 stripped
@@ -67941,6 +68595,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T4 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 60c83b7b7f769604f8cec711a9209bbd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60c83b7b7f769604f8cec711a9209bbd, type: 3}
@@ -68095,7 +68754,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2045143849}
   m_LocalRotation: {x: 0.78008795, y: 0.5845387, z: -0.009418995, w: -0.22290948}
-  m_LocalPosition: {x: 275, y: 17, z: -120.2}
+  m_LocalPosition: {x: 275, y: 18, z: -120.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -68404,6 +69063,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Wall_Blue (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 9c1cf82bc726dc047a91b16c03e504e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 9c1cf82bc726dc047a91b16c03e504e4,
         type: 3}
@@ -69056,6 +69720,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T4 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 60c83b7b7f769604f8cec711a9209bbd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60c83b7b7f769604f8cec711a9209bbd, type: 3}
 --- !u!4 &2066957907 stripped
@@ -69188,7 +69857,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2077315468}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.6, y: 0, z: -157.7}
+  m_LocalPosition: {x: 20.6, y: 1.8, z: -157.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -69206,6 +69875,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ToyTurnal (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817965088651313073, guid: a8c51f5c9b414134ea5915a706e53575,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4817965088651313073, guid: a8c51f5c9b414134ea5915a706e53575,
         type: 3}
@@ -69486,6 +70160,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T2 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8670548f19af7df41ac0ad4e3b3e48fe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8670548f19af7df41ac0ad4e3b3e48fe, type: 3}
@@ -69915,6 +70594,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T3 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 9044a3ca346bf2a4db74e8c6a6ad5301,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9044a3ca346bf2a4db74e8c6a6ad5301, type: 3}
 --- !u!4 &2107171872 stripped
@@ -70098,8 +70782,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: SFX Volume
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7044af0e8f894e64ba037c7b95bb3b1e, type: 2}
+  m_sharedMaterial: {fileID: 1007221958085958767, guid: 7044af0e8f894e64ba037c7b95bb3b1e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -70398,7 +71083,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2129472267}
   m_LocalRotation: {x: 0.78008795, y: 0.5845387, z: -0.009418995, w: -0.22290948}
-  m_LocalPosition: {x: 199.68, y: 17, z: -139}
+  m_LocalPosition: {x: 199.68, y: 18, z: -139}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -70482,6 +71167,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_T4 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 60c83b7b7f769604f8cec711a9209bbd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60c83b7b7f769604f8cec711a9209bbd, type: 3}
 --- !u!4 &2131682168 stripped
@@ -70545,7 +71235,7 @@ Transform:
   - {fileID: 834568709}
   - {fileID: 630997276}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2132003659
 PrefabInstance:
@@ -70723,6 +71413,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall_T1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269547722052956107, guid: 8230a448a647ca44984e5b88105a7747,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8230a448a647ca44984e5b88105a7747, type: 3}
@@ -71416,6 +72111,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Shelf_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7679006721092980432, guid: 78e4ffc602cfdc74abad8513d23ebdfc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7679006721092980432, guid: 78e4ffc602cfdc74abad8513d23ebdfc,
         type: 3}
@@ -72260,6 +72960,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ToyShelf2_01
       objectReference: {fileID: 0}
+    - target: {fileID: 2706084369276699419, guid: ee63c87b752c33841a38cf8e3335c23b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2706084369276699422, guid: ee63c87b752c33841a38cf8e3335c23b,
         type: 3}
       propertyPath: m_RootOrder
@@ -72600,7 +73305,7 @@ PrefabInstance:
     - target: {fileID: 3027946756980534031, guid: c443544ac65ee28438a79b8844c14332,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3027946756980534031, guid: c443544ac65ee28438a79b8844c14332,
         type: 3}
@@ -73073,6 +73778,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ToyShelf2_03
       objectReference: {fileID: 0}
+    - target: {fileID: 3517005048811522059, guid: d77e55e2ee7eb4c429c59f665001e767,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3517005048811522060, guid: d77e55e2ee7eb4c429c59f665001e767,
         type: 3}
       propertyPath: m_RootOrder
@@ -73437,6 +74147,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ToyShelf2_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301997733307174691, guid: 78c6b5c25efbc3f4f94b35e8fd79df71,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4301997733307174702, guid: 78c6b5c25efbc3f4f94b35e8fd79df71,
         type: 3}
@@ -74369,6 +75084,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5149612155311166228, guid: 315685c5d48cc264f9a2867ed313e94c,
         type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149612155311166228, guid: 315685c5d48cc264f9a2867ed313e94c,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -74450,6 +75170,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ToyTurnal
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817965088651313073, guid: a8c51f5c9b414134ea5915a706e53575,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4817965088651313073, guid: a8c51f5c9b414134ea5915a706e53575,
         type: 3}
@@ -74959,6 +75684,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Shelf_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 6296046844525105566, guid: ea2691cad5d8e2443b99357d4e99ad33,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6641645702467488548, guid: ea2691cad5d8e2443b99357d4e99ad33,
         type: 3}

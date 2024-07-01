@@ -31,8 +31,7 @@ public class EnemyAi : MonoBehaviour
     }
     void Start()
     {
-        animator = GetComponent<Animator>();
-        //playerController = GetComponent<PlayerController>();
+        animator = GetComponent<Animator>();       
         playerController = player.GetComponent<PlayerController>();
     }
     void Update()
@@ -81,6 +80,10 @@ public class EnemyAi : MonoBehaviour
         {
             walkPointSet = false;
         }
+        if (agent.pathStatus == NavMeshPathStatus.PathPartial || agent.pathStatus == NavMeshPathStatus.PathInvalid)
+        {
+            walkPointSet = false;
+        }
     }
     private void ChasePlayer()
     {
@@ -100,6 +103,13 @@ public class EnemyAi : MonoBehaviour
                 playerCon.TakeDamage(attackDamage);
             }           
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Obstacles"))
+        {
+            walkPointSet = false;
         }
     }
     public void ResetAttack()
