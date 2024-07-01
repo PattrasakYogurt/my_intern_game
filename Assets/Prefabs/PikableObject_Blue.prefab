@@ -141,9 +141,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 897626602665392665}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dc4e05130a30c04abc46b2726654c5f, type: 3}
+  m_Script: {fileID: 11500000, guid: 346b699ed5328ea4fb2374afba0a6d0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carryPoint: {fileID: 0}
-  dropPoint: {fileID: 0}
-  playerController: {fileID: 0}
+  objectType: 0
