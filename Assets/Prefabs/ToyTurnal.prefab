@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9095250900812049070}
   - component: {fileID: 6475091907455540836}
   - component: {fileID: 4611874232425706872}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ToyTurnal
   m_TagString: Untagged
   m_Icon: {fileID: 0}

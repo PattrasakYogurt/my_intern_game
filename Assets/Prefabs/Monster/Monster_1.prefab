@@ -481,7 +481,7 @@ NavMeshAgent:
   m_Acceleration: 7
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 0.2
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -509,8 +509,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   agent: {fileID: 3619430913518688929}
-  chase_Sound: {fileID: -7205206212377758748}
-  chase_Music: {fileID: -5392634455847166557}
+  chaseSound: {fileID: -7205206212377758748}
+  chaseMusic: {fileID: -5392634455847166557}
   playerController: {fileID: 0}
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 40

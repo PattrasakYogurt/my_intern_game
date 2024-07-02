@@ -305,6 +305,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cyan_Cube (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7110804414806100470, guid: 9090a47fa6a488040a8bca0525b33314,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9090a47fa6a488040a8bca0525b33314, type: 3}
 --- !u!4 &9025903 stripped
@@ -413,7 +418,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &18289736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1443,6 +1448,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Yellow_Cylinder
       objectReference: {fileID: 0}
+    - target: {fileID: 5197129150999640160, guid: 5095a098bb125054392f995de25d76f9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5095a098bb125054392f995de25d76f9, type: 3}
 --- !u!4 &53042430 stripped
@@ -1689,6 +1699,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Red_Cone (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5119181918678356536, guid: e7957d3490284ef4eaadd5927aa9e8cf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6236702802931342425, guid: e7957d3490284ef4eaadd5927aa9e8cf,
         type: 3}
@@ -3438,6 +3453,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Green_Cube (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8168287866404340234, guid: 315fd860363bb53419ac7d88fc288fdc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8168287866404340246, guid: 315fd860363bb53419ac7d88fc288fdc,
         type: 3}
       propertyPath: m_RootOrder
@@ -3466,7 +3486,7 @@ PrefabInstance:
     - target: {fileID: 8168287866404340246, guid: 315fd860363bb53419ac7d88fc288fdc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.12
+      value: 8.18
       objectReference: {fileID: 0}
     - target: {fileID: 8168287866404340246, guid: 315fd860363bb53419ac7d88fc288fdc,
         type: 3}
@@ -3833,6 +3853,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Purple_Cone (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8861324923844642888, guid: 881c020f91de24c4c99dc0f53d13e81d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 881c020f91de24c4c99dc0f53d13e81d, type: 3}
 --- !u!4 &109078841 stripped
@@ -3852,6 +3877,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Orange_Cylinder
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222620629525213898, guid: d0c03a82e6f77284cb9519e60a99ba2b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8236097701428619577, guid: d0c03a82e6f77284cb9519e60a99ba2b,
         type: 3}
@@ -4001,7 +4031,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &134993479
 Transform:
@@ -5029,6 +5059,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red_Cone (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5119181918678356536, guid: e7957d3490284ef4eaadd5927aa9e8cf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6236702802931342425, guid: e7957d3490284ef4eaadd5927aa9e8cf,
         type: 3}
       propertyPath: m_RootOrder
@@ -5721,6 +5756,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Orange_Cylinder (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8222620629525213898, guid: d0c03a82e6f77284cb9519e60a99ba2b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8236097701428619577, guid: d0c03a82e6f77284cb9519e60a99ba2b,
         type: 3}
       propertyPath: m_RootOrder
@@ -5952,6 +5992,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Green_Cube (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8168287866404340234, guid: 315fd860363bb53419ac7d88fc288fdc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8168287866404340246, guid: 315fd860363bb53419ac7d88fc288fdc,
         type: 3}
       propertyPath: m_RootOrder
@@ -6111,6 +6156,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Green_Cylinder
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078608194918429745, guid: 50a239184eb675e47969c9804713f95e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50a239184eb675e47969c9804713f95e, type: 3}
@@ -6336,6 +6386,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Green_Cube (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8168287866404340234, guid: 315fd860363bb53419ac7d88fc288fdc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8168287866404340246, guid: 315fd860363bb53419ac7d88fc288fdc,
         type: 3}
       propertyPath: m_RootOrder
@@ -6501,6 +6556,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red_Ach (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8226044252017105427, guid: 04d6d635b4b03c649a93323c40f0bfb8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04d6d635b4b03c649a93323c40f0bfb8, type: 3}
 --- !u!4 &230194295 stripped
@@ -6626,7 +6686,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &231986028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7811,7 +7871,6 @@ Transform:
   - {fileID: 250106924}
   - {fileID: 21220966}
   - {fileID: 1833521266}
-  - {fileID: 475729923}
   m_Father: {fileID: 0}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9199,6 +9258,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Red_Cone (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5119181918678356536, guid: e7957d3490284ef4eaadd5927aa9e8cf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6236702802931342425, guid: e7957d3490284ef4eaadd5927aa9e8cf,
         type: 3}
@@ -10627,6 +10691,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Orange_Cube (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1709234841279829802, guid: a6bfc7d939cf7a0429cbac574662409c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6bfc7d939cf7a0429cbac574662409c, type: 3}
 --- !u!4 &351366889 stripped
@@ -11025,6 +11094,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red_Cube
       objectReference: {fileID: 0}
+    - target: {fileID: 59955063810372113, guid: faae73b633b1476478bd9170c8059bb4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 59955063810372117, guid: faae73b633b1476478bd9170c8059bb4,
         type: 3}
       propertyPath: m_RootOrder
@@ -11048,7 +11122,7 @@ PrefabInstance:
     - target: {fileID: 59955063810372117, guid: faae73b633b1476478bd9170c8059bb4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.3187
+      value: 6.8472996
       objectReference: {fileID: 0}
     - target: {fileID: 59955063810372117, guid: faae73b633b1476478bd9170c8059bb4,
         type: 3}
@@ -11359,6 +11433,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red_Cone
       objectReference: {fileID: 0}
+    - target: {fileID: 5119181918678356536, guid: e7957d3490284ef4eaadd5927aa9e8cf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6236702802931342425, guid: e7957d3490284ef4eaadd5927aa9e8cf,
         type: 3}
       propertyPath: m_RootOrder
@@ -11453,6 +11532,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Orange_Cylinder (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222620629525213898, guid: d0c03a82e6f77284cb9519e60a99ba2b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8236097701428619577, guid: d0c03a82e6f77284cb9519e60a99ba2b,
         type: 3}
@@ -11673,6 +11757,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Yellow_Cone (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5135967616034861026, guid: d5cf52f14dd0a3b49a68dd33c3df38e7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5464596841469542928, guid: d5cf52f14dd0a3b49a68dd33c3df38e7,
         type: 3}
@@ -13156,7 +13245,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &410087040
 Light:
   m_ObjectHideFlags: 0
@@ -13725,6 +13814,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Yellow_Cylinder (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5197129150999640160, guid: 5095a098bb125054392f995de25d76f9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5095a098bb125054392f995de25d76f9, type: 3}
 --- !u!4 &427042032 stripped
@@ -13834,6 +13928,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Orange_Cylinder
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222620629525213898, guid: d0c03a82e6f77284cb9519e60a99ba2b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8236097701428619577, guid: d0c03a82e6f77284cb9519e60a99ba2b,
         type: 3}
@@ -15108,6 +15207,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Yellow_Cone (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5135967616034861026, guid: d5cf52f14dd0a3b49a68dd33c3df38e7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5464596841469542928, guid: d5cf52f14dd0a3b49a68dd33c3df38e7,
         type: 3}
       propertyPath: m_RootOrder
@@ -15136,7 +15240,7 @@ PrefabInstance:
     - target: {fileID: 5464596841469542928, guid: d5cf52f14dd0a3b49a68dd33c3df38e7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.6
+      value: 11.56
       objectReference: {fileID: 0}
     - target: {fileID: 5464596841469542928, guid: d5cf52f14dd0a3b49a68dd33c3df38e7,
         type: 3}
@@ -15931,37 +16035,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474888606}
   m_CullTransparentMesh: 1
---- !u!1 &475729922
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 475729923}
-  m_Layer: 0
-  m_Name: =====Level3=====
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &475729923
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 475729922}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 261962243}
-  m_RootOrder: 21
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &475860119
 GameObject:
   m_ObjectHideFlags: 0
@@ -16064,6 +16137,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Yellow_Cylinder (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5197129150999640160, guid: 5095a098bb125054392f995de25d76f9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5095a098bb125054392f995de25d76f9, type: 3}
@@ -17071,7 +17149,7 @@ PrefabInstance:
     - target: {fileID: 895151140676712727, guid: 7f0b44d4617b8fd42aa8ec973cf6053b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.4145
+      value: 4.45
       objectReference: {fileID: 0}
     - target: {fileID: 895151140676712727, guid: 7f0b44d4617b8fd42aa8ec973cf6053b,
         type: 3}
@@ -17122,6 +17200,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cyan_Ach (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580794478358885270, guid: 7f0b44d4617b8fd42aa8ec973cf6053b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f0b44d4617b8fd42aa8ec973cf6053b, type: 3}
@@ -17338,6 +17421,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Yellow_Cylinder (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5197129150999640160, guid: 5095a098bb125054392f995de25d76f9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5095a098bb125054392f995de25d76f9, type: 3}
@@ -17763,6 +17851,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Red_Cube (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 59955063810372113, guid: faae73b633b1476478bd9170c8059bb4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 59955063810372117, guid: faae73b633b1476478bd9170c8059bb4,
         type: 3}
@@ -18459,6 +18552,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Yellow_Cone (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5135967616034861026, guid: d5cf52f14dd0a3b49a68dd33c3df38e7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5464596841469542928, guid: d5cf52f14dd0a3b49a68dd33c3df38e7,
         type: 3}
       propertyPath: m_RootOrder
@@ -18487,7 +18585,7 @@ PrefabInstance:
     - target: {fileID: 5464596841469542928, guid: d5cf52f14dd0a3b49a68dd33c3df38e7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.13
+      value: 12.1655
       objectReference: {fileID: 0}
     - target: {fileID: 5464596841469542928, guid: d5cf52f14dd0a3b49a68dd33c3df38e7,
         type: 3}
@@ -20360,7 +20458,7 @@ PrefabInstance:
     - target: {fileID: 1709234841279829798, guid: a6bfc7d939cf7a0429cbac574662409c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.93
+      value: 1.22
       objectReference: {fileID: 0}
     - target: {fileID: 1709234841279829798, guid: a6bfc7d939cf7a0429cbac574662409c,
         type: 3}
@@ -20411,6 +20509,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Orange_Cube
+      objectReference: {fileID: 0}
+    - target: {fileID: 1709234841279829802, guid: a6bfc7d939cf7a0429cbac574662409c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6bfc7d939cf7a0429cbac574662409c, type: 3}
@@ -20650,6 +20753,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Purple_Cylinder (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970440581128275585, guid: d99110678533e804fb88b9dff73027e0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5693493088229647465, guid: d99110678533e804fb88b9dff73027e0,
         type: 3}
@@ -20900,6 +21008,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Green_Cube (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8168287866404340234, guid: 315fd860363bb53419ac7d88fc288fdc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8168287866404340246, guid: 315fd860363bb53419ac7d88fc288fdc,
         type: 3}
       propertyPath: m_RootOrder
@@ -20928,7 +21041,7 @@ PrefabInstance:
     - target: {fileID: 8168287866404340246, guid: 315fd860363bb53419ac7d88fc288fdc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4
+      value: 3.36
       objectReference: {fileID: 0}
     - target: {fileID: 8168287866404340246, guid: 315fd860363bb53419ac7d88fc288fdc,
         type: 3}
@@ -21734,6 +21847,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Yellow_Cube (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8288995934776564642, guid: 200ddd629d646a049812962964b61fd8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8288995934776564646, guid: 200ddd629d646a049812962964b61fd8,
         type: 3}
@@ -23133,6 +23251,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Purple_Cone (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8861324923844642888, guid: 881c020f91de24c4c99dc0f53d13e81d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 881c020f91de24c4c99dc0f53d13e81d, type: 3}
 --- !u!4 &675836205 stripped
@@ -23227,6 +23350,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cyan_Cube
+      objectReference: {fileID: 0}
+    - target: {fileID: 7110804414806100470, guid: 9090a47fa6a488040a8bca0525b33314,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9090a47fa6a488040a8bca0525b33314, type: 3}
@@ -23381,6 +23509,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Yellow_Cube (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8288995934776564642, guid: 200ddd629d646a049812962964b61fd8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8288995934776564646, guid: 200ddd629d646a049812962964b61fd8,
         type: 3}
@@ -24741,6 +24874,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blue_Cube (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2251480825007412356, guid: d5693a2e7dfb3054494ae337ed4fd90e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5693a2e7dfb3054494ae337ed4fd90e, type: 3}
 --- !u!4 &720502275 stripped
@@ -24972,6 +25110,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red_Cone
       objectReference: {fileID: 0}
+    - target: {fileID: 5119181918678356536, guid: e7957d3490284ef4eaadd5927aa9e8cf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6236702802931342425, guid: e7957d3490284ef4eaadd5927aa9e8cf,
         type: 3}
       propertyPath: m_RootOrder
@@ -25000,7 +25143,7 @@ PrefabInstance:
     - target: {fileID: 6236702802931342425, guid: e7957d3490284ef4eaadd5927aa9e8cf,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.33
+      value: 10.39
       objectReference: {fileID: 0}
     - target: {fileID: 6236702802931342425, guid: e7957d3490284ef4eaadd5927aa9e8cf,
         type: 3}
@@ -25899,6 +26042,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blue_Cube
+      objectReference: {fileID: 0}
+    - target: {fileID: 2251480825007412356, guid: d5693a2e7dfb3054494ae337ed4fd90e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5693a2e7dfb3054494ae337ed4fd90e, type: 3}
@@ -26802,6 +26950,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Orange_Cube
       objectReference: {fileID: 0}
+    - target: {fileID: 1709234841279829802, guid: a6bfc7d939cf7a0429cbac574662409c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6bfc7d939cf7a0429cbac574662409c, type: 3}
 --- !u!4 &776922279 stripped
@@ -27122,6 +27275,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Red_Cylinder
+      objectReference: {fileID: 0}
+    - target: {fileID: 4672792993743486267, guid: 46f6942de3a498146a99232bbffaa556,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46f6942de3a498146a99232bbffaa556, type: 3}
@@ -27529,6 +27687,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Yellow_Cylinder (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5197129150999640160, guid: 5095a098bb125054392f995de25d76f9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5095a098bb125054392f995de25d76f9, type: 3}
@@ -29987,6 +30150,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Purple_Cone
       objectReference: {fileID: 0}
+    - target: {fileID: 8861324923844642888, guid: 881c020f91de24c4c99dc0f53d13e81d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 881c020f91de24c4c99dc0f53d13e81d, type: 3}
 --- !u!4 &849455620 stripped
@@ -30120,6 +30288,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Purple_Ach
+      objectReference: {fileID: 0}
+    - target: {fileID: 748762229026087259, guid: c91aefee7bb3ab34fa6a4d754a0515dc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8972486425664240952, guid: c91aefee7bb3ab34fa6a4d754a0515dc,
         type: 3}
@@ -31905,6 +32078,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red_Cone (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5119181918678356536, guid: e7957d3490284ef4eaadd5927aa9e8cf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6236702802931342425, guid: e7957d3490284ef4eaadd5927aa9e8cf,
         type: 3}
       propertyPath: m_RootOrder
@@ -32494,7 +32672,7 @@ PrefabInstance:
     - target: {fileID: 2504510683321011717, guid: 04d6d635b4b03c649a93323c40f0bfb8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.53
+      value: 4.72
       objectReference: {fileID: 0}
     - target: {fileID: 2504510683321011717, guid: 04d6d635b4b03c649a93323c40f0bfb8,
         type: 3}
@@ -32540,6 +32718,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Red_Ach
+      objectReference: {fileID: 0}
+    - target: {fileID: 8226044252017105427, guid: 04d6d635b4b03c649a93323c40f0bfb8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04d6d635b4b03c649a93323c40f0bfb8, type: 3}
@@ -33993,6 +34176,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Green_Cube (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8168287866404340234, guid: 315fd860363bb53419ac7d88fc288fdc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8168287866404340246, guid: 315fd860363bb53419ac7d88fc288fdc,
         type: 3}
       propertyPath: m_RootOrder
@@ -34021,7 +34209,7 @@ PrefabInstance:
     - target: {fileID: 8168287866404340246, guid: 315fd860363bb53419ac7d88fc288fdc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4
+      value: 3.36
       objectReference: {fileID: 0}
     - target: {fileID: 8168287866404340246, guid: 315fd860363bb53419ac7d88fc288fdc,
         type: 3}
@@ -34417,6 +34605,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Green_Cone (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3996898336279459600, guid: cc889f6fc6d1ed249a5481455ad0752b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9004359464805395312, guid: cc889f6fc6d1ed249a5481455ad0752b,
         type: 3}
@@ -35382,6 +35575,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Green_Cube (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8168287866404340234, guid: 315fd860363bb53419ac7d88fc288fdc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8168287866404340246, guid: 315fd860363bb53419ac7d88fc288fdc,
         type: 3}
@@ -36628,6 +36826,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cyan_Cylinder (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5036056633470859192, guid: c624e34bd8c114d468c53264c5469412,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 9220985098156971191, guid: c624e34bd8c114d468c53264c5469412,
         type: 3}
       propertyPath: m_RootOrder
@@ -36878,6 +37081,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Yellow_Cylinder (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5197129150999640160, guid: 5095a098bb125054392f995de25d76f9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5095a098bb125054392f995de25d76f9, type: 3}
 --- !u!4 &1046783036 stripped
@@ -37112,7 +37320,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1061460462
 Transform:
@@ -37450,6 +37658,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cyan_Cube (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7110804414806100470, guid: 9090a47fa6a488040a8bca0525b33314,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9090a47fa6a488040a8bca0525b33314, type: 3}
@@ -39115,6 +39328,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Purple_Cylinder (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4970440581128275585, guid: d99110678533e804fb88b9dff73027e0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5693493088229647465, guid: d99110678533e804fb88b9dff73027e0,
         type: 3}
       propertyPath: m_RootOrder
@@ -39143,7 +39361,7 @@ PrefabInstance:
     - target: {fileID: 5693493088229647465, guid: d99110678533e804fb88b9dff73027e0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.17
+      value: 9.13
       objectReference: {fileID: 0}
     - target: {fileID: 5693493088229647465, guid: d99110678533e804fb88b9dff73027e0,
         type: 3}
@@ -39647,6 +39865,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Red_Ach
+      objectReference: {fileID: 0}
+    - target: {fileID: 8226044252017105427, guid: 04d6d635b4b03c649a93323c40f0bfb8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04d6d635b4b03c649a93323c40f0bfb8, type: 3}
@@ -40768,6 +40991,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Green_Cylinder (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6078608194918429745, guid: 50a239184eb675e47969c9804713f95e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50a239184eb675e47969c9804713f95e, type: 3}
 --- !u!4 &1166218614 stripped
@@ -41689,7 +41917,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1174331361
 Transform:
@@ -42254,7 +42482,7 @@ PrefabInstance:
     - target: {fileID: 2251480825007412352, guid: d5693a2e7dfb3054494ae337ed4fd90e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.6914
+      value: 2.22
       objectReference: {fileID: 0}
     - target: {fileID: 2251480825007412352, guid: d5693a2e7dfb3054494ae337ed4fd90e,
         type: 3}
@@ -42300,6 +42528,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blue_Cube (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2251480825007412356, guid: d5693a2e7dfb3054494ae337ed4fd90e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5693a2e7dfb3054494ae337ed4fd90e, type: 3}
@@ -43639,6 +43872,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Yellow_Cylinder (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5197129150999640160, guid: 5095a098bb125054392f995de25d76f9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5095a098bb125054392f995de25d76f9, type: 3}
 --- !u!4 &1229906533 stripped
@@ -43999,6 +44237,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Yellow_Cylinder
       objectReference: {fileID: 0}
+    - target: {fileID: 5197129150999640160, guid: 5095a098bb125054392f995de25d76f9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5095a098bb125054392f995de25d76f9, type: 3}
 --- !u!4 &1248220387 stripped
@@ -44153,6 +44396,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Yellow_Cylinder (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5197129150999640160, guid: 5095a098bb125054392f995de25d76f9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5095a098bb125054392f995de25d76f9, type: 3}
@@ -44975,6 +45223,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Purple_Cone (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8861324923844642888, guid: 881c020f91de24c4c99dc0f53d13e81d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 881c020f91de24c4c99dc0f53d13e81d, type: 3}
@@ -46333,6 +46586,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red_Cube
       objectReference: {fileID: 0}
+    - target: {fileID: 59955063810372113, guid: faae73b633b1476478bd9170c8059bb4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 59955063810372117, guid: faae73b633b1476478bd9170c8059bb4,
         type: 3}
       propertyPath: m_RootOrder
@@ -46869,6 +47127,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Green_Cube
       objectReference: {fileID: 0}
+    - target: {fileID: 8168287866404340234, guid: 315fd860363bb53419ac7d88fc288fdc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8168287866404340246, guid: 315fd860363bb53419ac7d88fc288fdc,
         type: 3}
       propertyPath: m_RootOrder
@@ -46897,7 +47160,7 @@ PrefabInstance:
     - target: {fileID: 8168287866404340246, guid: 315fd860363bb53419ac7d88fc288fdc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4
+      value: 3.36
       objectReference: {fileID: 0}
     - target: {fileID: 8168287866404340246, guid: 315fd860363bb53419ac7d88fc288fdc,
         type: 3}
@@ -47549,6 +47812,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Green_Cube (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8168287866404340234, guid: 315fd860363bb53419ac7d88fc288fdc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8168287866404340246, guid: 315fd860363bb53419ac7d88fc288fdc,
         type: 3}
       propertyPath: m_RootOrder
@@ -48029,6 +48297,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cyan_Cube (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7110804414806100470, guid: 9090a47fa6a488040a8bca0525b33314,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9090a47fa6a488040a8bca0525b33314, type: 3}
@@ -49328,6 +49601,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blue_Ach
       objectReference: {fileID: 0}
+    - target: {fileID: 8782524556200016511, guid: ab5ac7f2655562a44938138ffe1fe0d4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab5ac7f2655562a44938138ffe1fe0d4, type: 3}
 --- !u!4 &1431945575 stripped
@@ -49852,6 +50130,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Orange_Cylinder (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8222620629525213898, guid: d0c03a82e6f77284cb9519e60a99ba2b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8236097701428619577, guid: d0c03a82e6f77284cb9519e60a99ba2b,
         type: 3}
       propertyPath: m_RootOrder
@@ -50147,6 +50430,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blue_Cube (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2251480825007412356, guid: d5693a2e7dfb3054494ae337ed4fd90e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5693a2e7dfb3054494ae337ed4fd90e, type: 3}
@@ -52347,6 +52635,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Green_Cone (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3996898336279459600, guid: cc889f6fc6d1ed249a5481455ad0752b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 9004359464805395312, guid: cc889f6fc6d1ed249a5481455ad0752b,
         type: 3}
       propertyPath: m_RootOrder
@@ -53357,6 +53650,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Green_Cone
       objectReference: {fileID: 0}
+    - target: {fileID: 3996898336279459600, guid: cc889f6fc6d1ed249a5481455ad0752b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 9004359464805395312, guid: cc889f6fc6d1ed249a5481455ad0752b,
         type: 3}
       propertyPath: m_RootOrder
@@ -53698,7 +53996,7 @@ PrefabInstance:
     - target: {fileID: 2679999948315281271, guid: ba955db3fa0f16247b320a1e88fb42bb,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.49
+      value: 7.6799994
       objectReference: {fileID: 0}
     - target: {fileID: 2679999948315281271, guid: ba955db3fa0f16247b320a1e88fb42bb,
         type: 3}
@@ -53744,6 +54042,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cyan_Cone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795382740363007628, guid: ba955db3fa0f16247b320a1e88fb42bb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba955db3fa0f16247b320a1e88fb42bb, type: 3}
@@ -53840,6 +54143,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Red_Cylinder (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4672792993743486267, guid: 46f6942de3a498146a99232bbffaa556,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46f6942de3a498146a99232bbffaa556, type: 3}
@@ -54769,6 +55077,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Orange_Cylinder (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8222620629525213898, guid: d0c03a82e6f77284cb9519e60a99ba2b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8236097701428619577, guid: d0c03a82e6f77284cb9519e60a99ba2b,
         type: 3}
       propertyPath: m_RootOrder
@@ -55071,7 +55384,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1589308401
 Transform:
@@ -56572,6 +56885,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red_Cone (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5119181918678356536, guid: e7957d3490284ef4eaadd5927aa9e8cf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6236702802931342425, guid: e7957d3490284ef4eaadd5927aa9e8cf,
         type: 3}
       propertyPath: m_RootOrder
@@ -57101,7 +57419,7 @@ PrefabInstance:
     - target: {fileID: 895151140676712727, guid: 7f0b44d4617b8fd42aa8ec973cf6053b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.4145
+      value: 5.01
       objectReference: {fileID: 0}
     - target: {fileID: 895151140676712727, guid: 7f0b44d4617b8fd42aa8ec973cf6053b,
         type: 3}
@@ -57152,6 +57470,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cyan_Ach
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580794478358885270, guid: 7f0b44d4617b8fd42aa8ec973cf6053b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f0b44d4617b8fd42aa8ec973cf6053b, type: 3}
@@ -57691,6 +58014,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Green_Cube
+      objectReference: {fileID: 0}
+    - target: {fileID: 8168287866404340234, guid: 315fd860363bb53419ac7d88fc288fdc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8168287866404340246, guid: 315fd860363bb53419ac7d88fc288fdc,
         type: 3}
@@ -59346,6 +59674,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Purple_Cylinder (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4970440581128275585, guid: d99110678533e804fb88b9dff73027e0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5693493088229647465, guid: d99110678533e804fb88b9dff73027e0,
         type: 3}
       propertyPath: m_RootOrder
@@ -59374,7 +59707,7 @@ PrefabInstance:
     - target: {fileID: 5693493088229647465, guid: d99110678533e804fb88b9dff73027e0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.11
+      value: 9.17
       objectReference: {fileID: 0}
     - target: {fileID: 5693493088229647465, guid: d99110678533e804fb88b9dff73027e0,
         type: 3}
@@ -61339,6 +61672,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Yellow_Cone
       objectReference: {fileID: 0}
+    - target: {fileID: 5135967616034861026, guid: d5cf52f14dd0a3b49a68dd33c3df38e7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5464596841469542928, guid: d5cf52f14dd0a3b49a68dd33c3df38e7,
         type: 3}
       propertyPath: m_RootOrder
@@ -61367,7 +61705,7 @@ PrefabInstance:
     - target: {fileID: 5464596841469542928, guid: d5cf52f14dd0a3b49a68dd33c3df38e7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.486
+      value: 11.5460005
       objectReference: {fileID: 0}
     - target: {fileID: 5464596841469542928, guid: d5cf52f14dd0a3b49a68dd33c3df38e7,
         type: 3}
@@ -61536,6 +61874,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Green_Cube (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8168287866404340234, guid: 315fd860363bb53419ac7d88fc288fdc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8168287866404340246, guid: 315fd860363bb53419ac7d88fc288fdc,
         type: 3}
@@ -62428,6 +62771,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Purple_Cylinder
       objectReference: {fileID: 0}
+    - target: {fileID: 4970440581128275585, guid: d99110678533e804fb88b9dff73027e0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5693493088229647465, guid: d99110678533e804fb88b9dff73027e0,
         type: 3}
       propertyPath: m_RootOrder
@@ -62456,7 +62804,7 @@ PrefabInstance:
     - target: {fileID: 5693493088229647465, guid: d99110678533e804fb88b9dff73027e0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.17
+      value: 9.2300005
       objectReference: {fileID: 0}
     - target: {fileID: 5693493088229647465, guid: d99110678533e804fb88b9dff73027e0,
         type: 3}
@@ -65964,6 +66312,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red_Cone (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5119181918678356536, guid: e7957d3490284ef4eaadd5927aa9e8cf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6236702802931342425, guid: e7957d3490284ef4eaadd5927aa9e8cf,
         type: 3}
       propertyPath: m_RootOrder
@@ -66561,7 +66914,7 @@ PrefabInstance:
     - target: {fileID: 7110804414806100466, guid: 9090a47fa6a488040a8bca0525b33314,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.84
+      value: 5.0299997
       objectReference: {fileID: 0}
     - target: {fileID: 7110804414806100466, guid: 9090a47fa6a488040a8bca0525b33314,
         type: 3}
@@ -66607,6 +66960,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cyan_Cube
+      objectReference: {fileID: 0}
+    - target: {fileID: 7110804414806100470, guid: 9090a47fa6a488040a8bca0525b33314,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9090a47fa6a488040a8bca0525b33314, type: 3}
@@ -66921,6 +67279,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cyan_Cylinder
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036056633470859192, guid: c624e34bd8c114d468c53264c5469412,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9220985098156971191, guid: c624e34bd8c114d468c53264c5469412,
         type: 3}
@@ -67457,6 +67820,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Orange_Cylinder (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222620629525213898, guid: d0c03a82e6f77284cb9519e60a99ba2b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8236097701428619577, guid: d0c03a82e6f77284cb9519e60a99ba2b,
         type: 3}
@@ -68728,6 +69096,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cyan_Cube (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7110804414806100470, guid: 9090a47fa6a488040a8bca0525b33314,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9090a47fa6a488040a8bca0525b33314, type: 3}
 --- !u!4 &1992194165 stripped
@@ -69794,6 +70167,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Purple_Cone (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8861324923844642888, guid: 881c020f91de24c4c99dc0f53d13e81d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 881c020f91de24c4c99dc0f53d13e81d, type: 3}
 --- !u!4 &2029473552 stripped
@@ -70455,6 +70833,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Purple_Cylinder (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4970440581128275585, guid: d99110678533e804fb88b9dff73027e0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5693493088229647465, guid: d99110678533e804fb88b9dff73027e0,
         type: 3}
       propertyPath: m_RootOrder
@@ -70758,7 +71141,7 @@ PrefabInstance:
     - target: {fileID: 2251480825007412352, guid: d5693a2e7dfb3054494ae337ed4fd90e,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 4
+      value: 4.3968
       objectReference: {fileID: 0}
     - target: {fileID: 2251480825007412352, guid: d5693a2e7dfb3054494ae337ed4fd90e,
         type: 3}
@@ -70773,7 +71156,7 @@ PrefabInstance:
     - target: {fileID: 2251480825007412352, guid: d5693a2e7dfb3054494ae337ed4fd90e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.2
+      value: 2.0016
       objectReference: {fileID: 0}
     - target: {fileID: 2251480825007412352, guid: d5693a2e7dfb3054494ae337ed4fd90e,
         type: 3}
@@ -70824,6 +71207,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blue_Cube
+      objectReference: {fileID: 0}
+    - target: {fileID: 2251480825007412356, guid: d5693a2e7dfb3054494ae337ed4fd90e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5693a2e7dfb3054494ae337ed4fd90e, type: 3}
@@ -71126,6 +71514,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Red_Cone (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5119181918678356536, guid: e7957d3490284ef4eaadd5927aa9e8cf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6236702802931342425, guid: e7957d3490284ef4eaadd5927aa9e8cf,
         type: 3}
@@ -72101,6 +72494,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Yellow_Cylinder (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5197129150999640160, guid: 5095a098bb125054392f995de25d76f9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5095a098bb125054392f995de25d76f9, type: 3}
 --- !u!4 &2097919725 stripped
@@ -72120,6 +72518,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Yellow_Cone (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5135967616034861026, guid: d5cf52f14dd0a3b49a68dd33c3df38e7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5464596841469542928, guid: d5cf52f14dd0a3b49a68dd33c3df38e7,
         type: 3}
@@ -72149,7 +72552,7 @@ PrefabInstance:
     - target: {fileID: 5464596841469542928, guid: d5cf52f14dd0a3b49a68dd33c3df38e7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.61
+      value: 11.67
       objectReference: {fileID: 0}
     - target: {fileID: 5464596841469542928, guid: d5cf52f14dd0a3b49a68dd33c3df38e7,
         type: 3}
@@ -72663,6 +73066,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cyan_Cylinder (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5036056633470859192, guid: c624e34bd8c114d468c53264c5469412,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 9220985098156971191, guid: c624e34bd8c114d468c53264c5469412,
         type: 3}
       propertyPath: m_RootOrder
@@ -73120,6 +73528,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Yellow_Cube
+      objectReference: {fileID: 0}
+    - target: {fileID: 8288995934776564642, guid: 200ddd629d646a049812962964b61fd8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8288995934776564646, guid: 200ddd629d646a049812962964b61fd8,
         type: 3}
@@ -75212,17 +75625,17 @@ PrefabInstance:
     - target: {fileID: 4602167098563855839, guid: c443544ac65ee28438a79b8844c14332,
         type: 3}
       propertyPath: m_Intensity
-      value: 50
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 4602167098563855839, guid: c443544ac65ee28438a79b8844c14332,
         type: 3}
       propertyPath: m_SpotAngle
-      value: 101.25844
+      value: 89.06081
       objectReference: {fileID: 0}
     - target: {fileID: 4602167098563855839, guid: c443544ac65ee28438a79b8844c14332,
         type: 3}
       propertyPath: m_InnerSpotAngle
-      value: 61.963867
+      value: 49.766254
       objectReference: {fileID: 0}
     - target: {fileID: 8778148854087718111, guid: c443544ac65ee28438a79b8844c14332,
         type: 3}

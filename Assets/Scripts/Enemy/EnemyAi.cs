@@ -8,8 +8,8 @@ public class EnemyAi : MonoBehaviour
     public LayerMask whatIsGround, whatIsPlayer; 
     public NavMeshAgent agent;   
     private Animator animator;
-    public AudioSource chase_Sound;
-    public AudioSource chase_Music;    
+    public AudioSource chaseSound;
+    public AudioSource chaseMusic;    
     [SerializeField] private PlayerController playerController;   
 
     [Header("walk")]
@@ -72,6 +72,7 @@ public class EnemyAi : MonoBehaviour
         }
 
     }
+    /*
     private void Patroling()
     {
         if(!walkPointSet)
@@ -88,6 +89,23 @@ public class EnemyAi : MonoBehaviour
             walkPointSet = false;
         }
         if (agent.pathStatus == NavMeshPathStatus.PathPartial || agent.pathStatus == NavMeshPathStatus.PathInvalid)
+        {
+            walkPointSet = false;
+        }
+    }
+    */
+    private void Patroling()
+    {
+        if (!walkPointSet)
+        {
+            SearchWalkPoint();
+        }
+        if (walkPointSet)
+        {
+            agent.SetDestination(walkPoint);
+        }
+        Vector3 distanceToWalkPoint = transform.position - walkPoint;
+        if (distanceToWalkPoint.magnitude < 1f || agent.pathStatus != NavMeshPathStatus.PathComplete)
         {
             walkPointSet = false;
         }
@@ -135,9 +153,18 @@ public class EnemyAi : MonoBehaviour
         if (!isChasing)
         {
             isChasing = true;
-            chase_Music.Play();
-            GameManager.instance.main_Music.Stop();
-            chase_Sound.Play();
+            if (!chaseMusic.isPlaying)
+            {
+                chaseMusic.Play();
+            }
+            if (GameManager.instance.main_Music.isPlaying)
+            {
+                GameManager.instance.main_Music.Stop();
+            }
+            if (!chaseSound.isPlaying)
+            {
+                chaseSound.Play();
+            }
         }
     }
 
@@ -146,9 +173,18 @@ public class EnemyAi : MonoBehaviour
         if (isChasing)
         {
             isChasing = false;
-            chase_Music.Stop();
-            GameManager.instance.main_Music.Play();
-            chase_Sound.Stop();
+            if (chaseMusic.isPlaying)
+            {
+                chaseMusic.Stop();
+            }
+            if (!GameManager.instance.main_Music.isPlaying)
+            {
+                GameManager.instance.main_Music.Play();
+            }
+            if (chaseSound.isPlaying)
+            {
+                chaseSound.Stop();
+            }
         }
     }
 }
