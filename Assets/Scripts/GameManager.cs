@@ -9,7 +9,8 @@ public class GameManager : MonoBehaviour
     public GameObject winUI;
     public GameObject looseUI;
     public GameObject pauseUI;
-    public TextMeshProUGUI timerText; 
+    public TextMeshProUGUI timerText;
+    public AudioSource main_Music;
     public float timeRemaining;
     public bool isKeyObtainded = false;
     public bool isKeyObtained_level2 = false;

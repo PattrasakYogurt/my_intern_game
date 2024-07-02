@@ -4671,7 +4671,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -119}
-  m_SizeDelta: {x: 1200, y: 500}
+  m_SizeDelta: {x: 1500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &169057992
 MonoBehaviour:
@@ -12946,8 +12946,8 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 88762bb9df260c549a142778f78bc6b1, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.5
+  m_Pitch: 0.95
   Loop: 1
   Mute: 0
   Spatialize: 0
@@ -15219,6 +15219,7 @@ MonoBehaviour:
   looseUI: {fileID: 1868001359}
   pauseUI: {fileID: 662807630}
   timerText: {fileID: 748680480}
+  main_Music: {fileID: 401853221}
   timeRemaining: 600
   isKeyObtainded: 0
   isKeyObtained_level2: 0
@@ -48751,7 +48752,7 @@ MonoBehaviour:
   enemyPrefabs:
   - {fileID: 4538402385659251860, guid: d2e0df0367dd62140bf65d9083ad06b6, type: 3}
   - {fileID: 2592242452252954163, guid: 431b486fe7b13314695cd21730fd2f6f, type: 3}
-  - {fileID: 6685307075721750716, guid: 0edd065d11f172e45bfbcc19c3b7c532, type: 3}
+  - {fileID: 7954597834068072830, guid: faa0e034cf0264a459600bfa6d992480, type: 3}
   spawnPoints:
   - {fileID: 1510761912}
   - {fileID: 377544372}
@@ -60833,7 +60834,7 @@ MonoBehaviour:
   enemyPrefabs:
   - {fileID: 4538402385659251860, guid: d2e0df0367dd62140bf65d9083ad06b6, type: 3}
   - {fileID: 2592242452252954163, guid: 431b486fe7b13314695cd21730fd2f6f, type: 3}
-  - {fileID: 6685307075721750716, guid: 0edd065d11f172e45bfbcc19c3b7c532, type: 3}
+  - {fileID: 7954597834068072830, guid: faa0e034cf0264a459600bfa6d992480, type: 3}
   spawnPoints:
   - {fileID: 1391219048}
   - {fileID: 2028267084}
@@ -72878,7 +72879,7 @@ MonoBehaviour:
   enemyPrefabs:
   - {fileID: 4538402385659251860, guid: d2e0df0367dd62140bf65d9083ad06b6, type: 3}
   - {fileID: 2592242452252954163, guid: 431b486fe7b13314695cd21730fd2f6f, type: 3}
-  - {fileID: 6685307075721750716, guid: 0edd065d11f172e45bfbcc19c3b7c532, type: 3}
+  - {fileID: 7954597834068072830, guid: faa0e034cf0264a459600bfa6d992480, type: 3}
   spawnPoints:
   - {fileID: 788932880}
   - {fileID: 834568709}
