@@ -8,6 +8,8 @@ public class EnemyAi : MonoBehaviour
     public LayerMask whatIsGround, whatIsPlayer; 
     public NavMeshAgent agent;   
     private Animator animator;
+    public AudioSource chase_Sound;
+    public AudioSource chase_Music;
     [SerializeField] private PlayerController playerController;   
 
     [Header("walk")]
@@ -42,11 +44,27 @@ public class EnemyAi : MonoBehaviour
         {
             Patroling();
             animator.SetTrigger("Walk");
+            if(chase_Music.isPlaying)
+            {
+                chase_Music.Stop();
+            }
+            if (chase_Sound.isPlaying)
+            {
+                chase_Sound.Stop();
+            }
         }
         if(playerInSightRange && !playerInAttackRange)
         {
             ChasePlayer();
             animator.SetTrigger("Run");
+            if (!chase_Music.isPlaying)
+            {
+                chase_Music.Play();
+            }
+            if (!chase_Sound.isPlaying)
+            {
+                chase_Sound.Play();
+            }
         }
         if (playerInSightRange && playerInAttackRange)
         {

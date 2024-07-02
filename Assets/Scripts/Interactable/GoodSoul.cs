@@ -5,7 +5,7 @@ using UnityEngine;
 public class GoodSoul : MonoBehaviour , IInteractable
 {
     [SerializeField] private PlayerController playerController;
-    //[SerializeField] private AudioSource soulSound;
+    [SerializeField] private AudioSource soulSound;
     public string GetInteractionText()
     {
         return "Press E to get";
@@ -15,7 +15,7 @@ public class GoodSoul : MonoBehaviour , IInteractable
     {
         playerController.GetComponent<PlayerController>();
         playerController.Heal(20);
-        //soulSound.Play();
+        soulSound.Play();
         Destroy(gameObject, 0.5f);
     }
 
