@@ -16,7 +16,7 @@ public class Door : MonoBehaviour, IInteractable
         }
         else
         {
-            return "Press E to open the door";
+            return "Press E to open";
         }
     }
 

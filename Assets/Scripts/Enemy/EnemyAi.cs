@@ -25,6 +25,7 @@ public class EnemyAi : MonoBehaviour
     [Header("States")]
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
+    private bool isChasing;
     
     private void Awake()
     {
@@ -35,6 +36,7 @@ public class EnemyAi : MonoBehaviour
     {
         animator = GetComponent<Animator>();       
         playerController = player.GetComponent<PlayerController>();
+        isChasing = false;
     }
     void Update()
     {
@@ -44,35 +46,20 @@ public class EnemyAi : MonoBehaviour
         {
             Patroling();
             animator.SetTrigger("Walk");
-            if(chase_Music.isPlaying)
-            {
-                chase_Music.Stop();   
-                GameManager.instance.main_Music.Play();
-            }
-            if (chase_Sound.isPlaying)
-            {
-                chase_Sound.Stop();
-            }           
+            StopChaseMusic();       
         }
-        if(playerInSightRange && !playerInAttackRange)
+        else if(playerInSightRange && !playerInAttackRange)
         {
             ChasePlayer();
             animator.SetTrigger("Run");
-            if (!chase_Music.isPlaying)
-            {
-                chase_Music.Play();              
-                GameManager.instance.main_Music.Stop();
-            }
-            if (!chase_Sound.isPlaying)
-            {
-                chase_Sound.Play();
-            }
+            StartChaseMusic();
         }
-        if (playerInSightRange && playerInAttackRange)
+        else if (playerInSightRange && playerInAttackRange)
         {
             AttackPlayer();
             animator.SetTrigger("Attack");
-        }       
+            StartChaseMusic();
+        }
     }
     private void SearchWalkPoint()
     {
@@ -143,5 +130,25 @@ public class EnemyAi : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, sightRange);
     }
-    
+    private void StartChaseMusic()
+    {
+        if (!isChasing)
+        {
+            isChasing = true;
+            chase_Music.Play();
+            GameManager.instance.main_Music.Stop();
+            chase_Sound.Play();
+        }
+    }
+
+    private void StopChaseMusic()
+    {
+        if (isChasing)
+        {
+            isChasing = false;
+            chase_Music.Stop();
+            GameManager.instance.main_Music.Play();
+            chase_Sound.Stop();
+        }
+    }
 }

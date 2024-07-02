@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8667115336005105808}
   - component: {fileID: 5757883936615413557}
   - component: {fileID: 7497626581652947967}
+  - component: {fileID: -6656196742313742594}
   m_Layer: 0
   m_Name: ToyCar
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-6656196742313742594
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8290027225585869354}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 527962735512037890, guid: e66abb27f55ae7e4ca849d7a285d6cf2, type: 3}

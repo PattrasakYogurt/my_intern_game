@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5302717068493923595}
   - component: {fileID: 9095250900812049070}
   - component: {fileID: 6475091907455540836}
+  - component: {fileID: 4611874232425706872}
   m_Layer: 0
   m_Name: ToyTurnal
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4611874232425706872
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4817965088651313073}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 668457573247270315, guid: ba84d4f1d16b5004081a37ee50f47602, type: 3}
