@@ -10,48 +10,55 @@ public class PlayerController : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     public Healthbar healthbar;
-    [Header("BoolGroup")]
-    bool isGrounded;
-    private bool isRun = false;
-    private bool isCouch = false;
-    [Header("Other")]
-    private CharacterController characterController;
-    public InteractionUI interactionUI;
-    private Vector3 velocity;    
+
+    [Header("StaminaGroup")]
+    public float stamina = 0f;
+    public float maxStamina = 100f;
     public Slider staminaBar;
-    [Header("FloatGroup")]
     [SerializeField] private float runCost;
     [SerializeField] private float chargeRate = 1f;
-    public float stamina, maxStamina;
+
+    [Header("MovementGroup")]
     public float walkSpeed = 5f;
-    public float originlWalkSpeed = 5f;
+    public float originalWalkSpeed = 5f;
     [SerializeField] private float gravity = -9.81f;
     [SerializeField] private float jumpForce = 5f;
     [SerializeField] private float groundDistance = 0.4f;
+    bool isGrounded;
+
+    [Header("InteractionGroup")]
+    public InteractionUI interactionUI;
     [SerializeField] private float raycastDistance = 6f;
+    
     [Header("TransformGroup")]
     [SerializeField] private Transform groundCheck;
     [SerializeField] private Transform orieantation;
     [SerializeField] private Transform cameraPos;
     [SerializeField] private Transform camera_NormalPos;
-    [SerializeField] private Transform camera_CouchPos;
+    [SerializeField] private Transform camera_CrouchPos;
+
     [Header("LayerMaskGroup")]
     [SerializeField] private LayerMask raycastLayer;
     [SerializeField] private LayerMask groundMask;
     [SerializeField] private string currentHit;
 
+    private bool isRunning = false;
+    private bool isCrouching = false;
+    private CharacterController characterController;
+    private Vector3 velocity;
     void Start()
     {
         currentHealth = maxHealth;       
         healthbar = GetComponent<Healthbar>();
-        characterController = GetComponent<CharacterController>();
-        //rigidBody = GetComponent<Rigidbody>();
-        healthbar.SetHealth(maxHealth);       
+        characterController = GetComponent<CharacterController>();       
+        healthbar.SetHealth(maxHealth);
+        stamina = maxStamina;
     }
     void Update()
     {
         PlayerMove();
-        PlayerRayCast();
+        PlayerRayCast();      
+        HandleStamina();
         if (Input.GetKey(KeyCode.LeftShift))
         {
             stamina -= runCost * Time.deltaTime;
@@ -63,7 +70,7 @@ public class PlayerController : MonoBehaviour
         }
         if(Input.GetKey(KeyCode.LeftControl))
         {
-            cameraPos.position = new Vector3(transform.position.x, camera_CouchPos.position.y, camera_CouchPos.position.z);
+            cameraPos.position = new Vector3(transform.position.x, camera_CrouchPos.position.y, camera_CrouchPos.position.z);
         }
         StartCoroutine(RechargeStamina());
         
@@ -100,41 +107,47 @@ public class PlayerController : MonoBehaviour
         Vector3 direction = orieantation.right * h + orieantation.forward * v;
         characterController.Move(direction* walkSpeed * Time.deltaTime);       
         velocity.y += gravity * Time.deltaTime;
-        characterController.Move(velocity * Time.deltaTime);          
+        characterController.Move(velocity * Time.deltaTime);       
+        
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
-        }       
+        }
+        
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            isRun = true;
-            isCouch = false;
-            walkSpeed += 5f;           
-            Debug.Log("Run");
+            StartRunning();
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            isRun = false;
-            isCouch = false;
-            walkSpeed -= 5f;
-            Debug.Log("StopRun");
+            StopRunning();
         }
-        if(Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.LeftControl))
         {
-            isCouch = true;
-            isRun = false;
-            walkSpeed -= 2f;
-            Debug.Log("Couch");
+            StartCrouching();
         }
         if (Input.GetKeyUp(KeyCode.LeftControl))
         {
-            isCouch = false;
-            isRun = false;
-            cameraPos.position = new Vector3(transform.position.x, camera_NormalPos.position.y, camera_NormalPos.position.z);
-            walkSpeed += 2f;
-            Debug.Log("StopCouch");
+            StopCrouching();
         }
-        
+
+    }
+    private void HandleStamina()
+    {
+        if (isRunning)
+        {
+            stamina -= runCost * Time.deltaTime;
+            staminaBar.value = stamina;
+            if (stamina < 0)
+            {
+                stamina = 0;
+                StopRunning();
+            }
+        }
+        else
+        {
+            StartCoroutine(RechargeStamina());
+        }
     }
     public void PlayerRayCast()
     {
@@ -162,17 +175,54 @@ public class PlayerController : MonoBehaviour
             Debug.DrawRay(cameraPos.position, cameraPos.forward * raycastDistance, Color.red);
         }
     }
-    IEnumerator RechargeStamina()
+    private void StartRunning()
+    {
+        if (stamina > 0)
+        {
+            isRunning = true;
+            isCrouching = false;
+            walkSpeed = originalWalkSpeed + 5f;
+            Debug.Log("Run");
+        }
+    }
+
+    private void StopRunning()
+    {
+        isRunning = false;
+        walkSpeed = originalWalkSpeed;
+        Debug.Log("StopRun");
+    }
+
+    private void StartCrouching()
+    {
+        isCrouching = true;
+        isRunning = false;
+        walkSpeed = originalWalkSpeed - 2f;
+        cameraPos.position = new Vector3(transform.position.x, camera_CrouchPos.position.y, camera_CrouchPos.position.z);
+        Debug.Log("Crouch");
+    }
+
+    private void StopCrouching()
+    {
+        isCrouching = false;
+        cameraPos.position = new Vector3(transform.position.x, camera_NormalPos.position.y, camera_NormalPos.position.z);
+        walkSpeed = originalWalkSpeed;
+        Debug.Log("StopCrouch");
+    }
+
+    private IEnumerator RechargeStamina()
     {
         yield return new WaitForSeconds(1f);
-        while(stamina < maxStamina)
+        while (stamina < maxStamina && !isRunning)
         {
-            stamina += chargeRate/100f;
-            if(stamina > maxStamina) 
-            { stamina = maxStamina;}
+            stamina += chargeRate / 100f;
+            if (stamina > maxStamina)
+            {
+                stamina = maxStamina;
+            }
             staminaBar.value = stamina;
             yield return new WaitForSeconds(1f);
         }
     }
-    
+
 }

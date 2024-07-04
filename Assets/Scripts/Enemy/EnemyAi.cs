@@ -108,7 +108,9 @@ public class EnemyAi : MonoBehaviour
             if (slashEffect != null)
             {
                 Vector3 slashPosition = slashPos.position; // Adjust this to where you want the slash effect to appear
-                Quaternion slashRotation = Quaternion.LookRotation(slashPos.position - transform.position);
+                //Quaternion slashRotation = Quaternion.LookRotation(slashPos.position - transform.position);
+                Quaternion slashRotation = Quaternion.LookRotation(slashPos.position);
+
                 slashEffect.PlaySlashEffect(slashPosition, slashRotation);
             }
             PlayerController playerCon = player.GetComponent<PlayerController>();
