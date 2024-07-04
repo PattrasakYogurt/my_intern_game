@@ -22,7 +22,7 @@ public class EnemyAi : MonoBehaviour
     bool alreadyAttacked;
     public int attackDamage = 20;
     public SlashEffect slashEffect;
-    private Camera playerCamera;
+    public Transform slashPos;
 
     [Header("States")]
     public float sightRange, attackRange;
@@ -39,7 +39,7 @@ public class EnemyAi : MonoBehaviour
         animator = GetComponent<Animator>();       
         playerController = player.GetComponent<PlayerController>();
         isChasing = false;
-        playerCamera = player.GetComponentInChildren<Camera>();
+        
     }
     void Update()
     {
@@ -75,28 +75,7 @@ public class EnemyAi : MonoBehaviour
         }
 
     }
-    /*
-    private void Patroling()
-    {
-        if(!walkPointSet)
-        {
-            SearchWalkPoint();
-        }
-        if (walkPointSet)
-        {
-            agent.SetDestination(walkPoint);
-        }
-        Vector3 distanceWalkPoint = transform.position - walkPoint;
-        if(distanceWalkPoint.magnitude < 1f)
-        {
-            walkPointSet = false;
-        }
-        if (agent.pathStatus == NavMeshPathStatus.PathPartial || agent.pathStatus == NavMeshPathStatus.PathInvalid)
-        {
-            walkPointSet = false;
-        }
-    }
-    */
+    
     private void Patroling()
     {
         if (!walkPointSet)
@@ -125,11 +104,11 @@ public class EnemyAi : MonoBehaviour
         if(!alreadyAttacked)
         {
             alreadyAttacked = true;
-            // Play slash effect in front of the player's camera
-            if (slashEffect != null && playerCamera != null)
+            // Play slash effect
+            if (slashEffect != null)
             {
-                Vector3 slashPosition = playerCamera.transform.position + playerCamera.transform.forward * 2f; // Adjust the distance as needed
-                Quaternion slashRotation = playerCamera.transform.rotation;
+                Vector3 slashPosition = slashPos.position; // Adjust this to where you want the slash effect to appear
+                Quaternion slashRotation = Quaternion.LookRotation(slashPos.position - transform.position);
                 slashEffect.PlaySlashEffect(slashPosition, slashRotation);
             }
             PlayerController playerCon = player.GetComponent<PlayerController>();
