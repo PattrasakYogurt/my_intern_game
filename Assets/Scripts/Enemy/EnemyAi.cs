@@ -21,6 +21,8 @@ public class EnemyAi : MonoBehaviour
     public float timeBetweenAttacks;
     bool alreadyAttacked;
     public int attackDamage = 20;
+    public SlashEffect slashEffect;
+    private Camera playerCamera;
 
     [Header("States")]
     public float sightRange, attackRange;
@@ -37,6 +39,7 @@ public class EnemyAi : MonoBehaviour
         animator = GetComponent<Animator>();       
         playerController = player.GetComponent<PlayerController>();
         isChasing = false;
+        playerCamera = player.GetComponentInChildren<Camera>();
     }
     void Update()
     {
@@ -122,6 +125,13 @@ public class EnemyAi : MonoBehaviour
         if(!alreadyAttacked)
         {
             alreadyAttacked = true;
+            // Play slash effect in front of the player's camera
+            if (slashEffect != null && playerCamera != null)
+            {
+                Vector3 slashPosition = playerCamera.transform.position + playerCamera.transform.forward * 2f; // Adjust the distance as needed
+                Quaternion slashRotation = playerCamera.transform.rotation;
+                slashEffect.PlaySlashEffect(slashPosition, slashRotation);
+            }
             PlayerController playerCon = player.GetComponent<PlayerController>();
             if(playerCon != null)
             {

@@ -346,6 +346,37 @@ Transform:
   m_Father: {fileID: 884198878678250898}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3705437182754604864
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 81886763453704793}
+  m_Layer: 0
+  m_Name: SlashPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &81886763453704793
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3705437182754604864}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.138, y: 0.877, z: 1.515}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3868719898267031086}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3772501210550961428
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,6 +454,7 @@ GameObject:
   - component: {fileID: 3619430913518688930}
   - component: {fileID: -5392634455847166557}
   - component: {fileID: -7205206212377758748}
+  - component: {fileID: -531554901170389676}
   m_Layer: 0
   m_Name: Monster_1
   m_TagString: Untagged
@@ -444,6 +476,7 @@ Transform:
   m_Children:
   - {fileID: 8847946678524695141}
   - {fileID: 2871817636876789952}
+  - {fileID: 81886763453704793}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -142.844, z: 0}
@@ -516,6 +549,8 @@ MonoBehaviour:
   walkPointRange: 40
   timeBetweenAttacks: 2
   attackDamage: 20
+  slashEffect: {fileID: -531554901170389676}
+  slashPos: {fileID: 81886763453704793}
   sightRange: 10
   attackRange: 2
   playerInSightRange: 0
@@ -714,6 +749,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-531554901170389676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4538402385659251860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df7d56333fef44448378e7e2e7db3b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slashParticleSystem: {fileID: 8449959554663254800, guid: 8b321496d8d8dd046b6eb54178b31a4d,
+    type: 3}
 --- !u!1 &5685195548754390856
 GameObject:
   m_ObjectHideFlags: 0
