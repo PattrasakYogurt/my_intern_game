@@ -21,8 +21,8 @@ public class GoodSoul : MonoBehaviour , IInteractable
         {
            playerController.Heal(20);
             isUse = true;
+            soulSound.Play();
         }
-        soulSound.Play();
         ParticleSystem spawnParticle = Instantiate(particle, transform.position, Quaternion.identity);
         spawnParticle.Play();
         Destroy(spawnParticle.gameObject,spawnParticle.main.duration + spawnParticle.main.startLifetime.constantMax);
