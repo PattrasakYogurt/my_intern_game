@@ -1607,7 +1607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4df7d56333fef44448378e7e2e7db3b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slashParticleSystem: {fileID: 8449959554663254800, guid: 8b321496d8d8dd046b6eb54178b31a4d,
+  slashParticleSystem: {fileID: 7960235353623229313, guid: 45081633101e8e445891d1248768b16e,
     type: 3}
 --- !u!1 &8017097448758972287
 GameObject:
