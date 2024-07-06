@@ -120,8 +120,8 @@ public class EnemyAi : MonoBehaviour
             if (slashEffect != null)
             {
                 Vector3 slashPosition = slashPos.position;               
-                Quaternion slashRotation = Quaternion.LookRotation(player.position - slashPos.position);
-                slashEffect.PlaySlashEffect(slashPosition, slashRotation);
+                //Quaternion slashRotation = Quaternion.LookRotation(player.position - slashPos.position);
+                slashEffect.PlaySlashEffect(slashPosition, Quaternion.identity);
             }
             PlayerController playerCon = player.GetComponent<PlayerController>();
             if(playerCon != null)
