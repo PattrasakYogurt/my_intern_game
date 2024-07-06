@@ -23,6 +23,7 @@ public class EnemyAi : MonoBehaviour
     public int attackDamage = 20;
     public SlashEffect slashEffect;
     public Transform slashPos;
+    
 
     [Header("States")]
     public float sightRange, attackRange;
@@ -48,20 +49,20 @@ public class EnemyAi : MonoBehaviour
         if(!playerInSightRange && !playerInAttackRange)
         {
             Patroling();
-            animator.SetTrigger("Walk");
-            StopChaseMusic();       
+            //animator.SetTrigger("Walk");
+            //StopChaseMusic();       
         }
         else if(playerInSightRange && !playerInAttackRange)
         {
             ChasePlayer();
-            animator.SetTrigger("Run");
-            StartChaseMusic();
+           // animator.SetTrigger("Run");
+           // StartChaseMusic();
         }
         else if (playerInSightRange && playerInAttackRange)
         {
             AttackPlayer();
-            animator.SetTrigger("Attack");
-            StartChaseMusic();
+            //animator.SetTrigger("Attack");
+            //StartChaseMusic();
         }
     }
     private void SearchWalkPoint()
@@ -86,31 +87,40 @@ public class EnemyAi : MonoBehaviour
         {
             agent.SetDestination(walkPoint);
         }
-        Vector3 distanceToWalkPoint = transform.position - walkPoint;
-        if (distanceToWalkPoint.magnitude < 1f || agent.pathStatus != NavMeshPathStatus.PathComplete)
-        {
+        // Vector3 distanceToWalkPoint = transform.position - walkPoint;
+        // if (distanceToWalkPoint.magnitude < 1f || agent.pathStatus != NavMeshPathStatus.PathComplete)
+        // {
+        //    walkPointSet = false;
+        //}
+        if (Vector3.Distance(transform.position, walkPoint) < 1f || agent.pathStatus != NavMeshPathStatus.PathComplete)
             walkPointSet = false;
-        }
+
+        animator.SetTrigger("Walk");
+        StopChaseMusic();
     }
     private void ChasePlayer()
     {
         agent.SetDestination(player.position);
+        animator.SetTrigger("Run");
+        StartChaseMusic();
     }
     public void AttackPlayer()
     {
         agent.SetDestination(transform.position);
-        transform.LookAt(player);
-        
-        if(!alreadyAttacked)
+        //Vector3 targetPosition = new Vector3(player.position.x, transform.position.y, player.position.z);
+        transform.LookAt(new Vector3(player.position.x, transform.position.y, player.position.z));
+
+        //transform.LookAt(targetPosition);
+        //transform.LookAt(player);
+
+        if (!alreadyAttacked)
         {
             alreadyAttacked = true;
             // Play slash effect
             if (slashEffect != null)
             {
-                Vector3 slashPosition = slashPos.position; // Adjust this to where you want the slash effect to appear
-                //Quaternion slashRotation = Quaternion.LookRotation(slashPos.position - transform.position);
-                Quaternion slashRotation = Quaternion.LookRotation(slashPos.position);
-
+                Vector3 slashPosition = slashPos.position;               
+                Quaternion slashRotation = Quaternion.LookRotation(player.position - slashPos.position);
                 slashEffect.PlaySlashEffect(slashPosition, slashRotation);
             }
             PlayerController playerCon = player.GetComponent<PlayerController>();
@@ -120,6 +130,8 @@ public class EnemyAi : MonoBehaviour
             }           
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
+        animator.SetTrigger("Attack");
+        StartChaseMusic();
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -144,18 +156,15 @@ public class EnemyAi : MonoBehaviour
         if (!isChasing)
         {
             isChasing = true;
+
             if (!chaseMusic.isPlaying)
-            {
                 chaseMusic.Play();
-            }
+
             if (GameManager.instance.main_Music.isPlaying)
-            {
                 GameManager.instance.main_Music.Stop();
-            }
+
             if (!chaseSound.isPlaying)
-            {
                 chaseSound.Play();
-            }
         }
     }
 
@@ -164,18 +173,15 @@ public class EnemyAi : MonoBehaviour
         if (isChasing)
         {
             isChasing = false;
+
             if (chaseMusic.isPlaying)
-            {
                 chaseMusic.Stop();
-            }
+
             if (!GameManager.instance.main_Music.isPlaying)
-            {
                 GameManager.instance.main_Music.Play();
-            }
+
             if (chaseSound.isPlaying)
-            {
                 chaseSound.Stop();
-            }
         }
     }
 }
