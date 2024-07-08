@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
         PlayerMove();
         PlayerRayCast();      
         HandleStamina();
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift) && !isCrouching)
         {
             stamina -= runCost * Time.deltaTime;
             staminaBar.value = stamina;
@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour
                 stamina = 0;
             }
         }
-        if(Input.GetKey(KeyCode.LeftControl))
+        if(Input.GetKey(KeyCode.LeftControl) && !isRunning)
         {
             cameraPos.position = new Vector3(transform.position.x, camera_CrouchPos.position.y, camera_CrouchPos.position.z);
         }
@@ -114,7 +114,7 @@ public class PlayerController : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
         }
         
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.LeftShift) && !isCrouching)
         {
             StartRunning();
         }
@@ -122,7 +122,7 @@ public class PlayerController : MonoBehaviour
         {
             StopRunning();
         }
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.LeftControl) && !isRunning)
         {
             StartCrouching();
         }

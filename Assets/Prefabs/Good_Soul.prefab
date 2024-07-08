@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 533218870370865784}
   - component: {fileID: 1881169580}
   - component: {fileID: 1881169579}
+  - component: {fileID: -1105931927102080556}
   m_Layer: 0
   m_Name: Good_Soul
   m_TagString: IInteractable
@@ -322,3 +323,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerController: {fileID: 0}
   soulSound: {fileID: 1881169580}
+  isUse: 0
+  particle: {fileID: 0}
+--- !u!208 &-1105931927102080556
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014671312935884223}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.89400005, y: 0.851, z: 1}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
