@@ -186,6 +186,8 @@ public class GameManager : MonoBehaviour
         DisablePlayer();
         Time.timeScale = 0;
         looseUI.SetActive(true);
+        Cursor.lockState = CursorLockMode.None; 
+        Cursor.visible = true;
     }
     public void PlayerWin()
     {
