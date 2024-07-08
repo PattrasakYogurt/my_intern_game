@@ -22,4 +22,12 @@ public class PopUp : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+    public void LoadMainMenuFromGamePlay()
+    {
+        SceneManager.LoadScene(0);
+    }
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }
