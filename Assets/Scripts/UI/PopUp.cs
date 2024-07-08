@@ -18,4 +18,8 @@ public class PopUp : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+    public void LoadGamePlayScene()
+    {
+        SceneManager.LoadScene(1);
+    }
 }
