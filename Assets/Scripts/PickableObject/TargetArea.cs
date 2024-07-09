@@ -6,11 +6,12 @@ public class TargetArea : MonoBehaviour
 {
     public PickableObjects.ObjectType areaType;
     public ParticleSystem correct_Particle;
+    public GameObject pin_Check;
     public bool correctTik = false;
     void Start()
     {
         correct_Particle.Stop();
-        
+        pin_Check.SetActive(true);
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -26,7 +27,7 @@ public class TargetArea : MonoBehaviour
                 correct_Particle.Play();
                 correctTik = true;
                 GameManager.instance.pickCheck++;
-                
+                Destroy(pin_Check, 2f);
             }
         }
     }
