@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Key : MonoBehaviour, IInteractable
 {
     [SerializeField] private AudioSource keySound;
-    
+    bool isKeep = false;
     public string GetInteractionText()
     {
         return "Press E to collect";
@@ -14,8 +14,12 @@ public class Key : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        GameManager.instance.keyObtained += 1;       
-        keySound.Play();     
+        if (isKeep == false)
+        {
+            isKeep = true;
+            GameManager.instance.keyObtained += 1;
+            keySound.Play();
+        }           
         Destroy(gameObject, 1f);
     }
 

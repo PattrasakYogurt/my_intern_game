@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 1881169580}
   - component: {fileID: 1881169579}
   - component: {fileID: -1105931927102080556}
+  - component: {fileID: 7085886855768433230}
   m_Layer: 0
   m_Name: Good_Soul
   m_TagString: IInteractable
@@ -341,3 +342,16 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!65 &7085886855768433230
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014671312935884223}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7888546, y: 1.7013016, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
