@@ -23,6 +23,7 @@ public class EnemyAi : MonoBehaviour
     public int attackDamage = 20;
     public SlashEffect slashEffect;
     public Transform slashPos;
+    public AudioSource slashSound;
     
 
     [Header("States")]
@@ -119,9 +120,12 @@ public class EnemyAi : MonoBehaviour
             // Play slash effect
             if (slashEffect != null)
             {
-                Vector3 slashPosition = slashPos.position;               
-                //Quaternion slashRotation = Quaternion.LookRotation(player.position - slashPos.position);
+                Vector3 slashPosition = slashPos.position;                              
                 slashEffect.PlaySlashEffect(slashPosition, Quaternion.identity);
+                if(!slashSound.isPlaying)
+                {
+                    slashSound.Play();
+                }
             }
             PlayerController playerCon = player.GetComponent<PlayerController>();
             if(playerCon != null)
