@@ -11,7 +11,7 @@ public class GoodSoul : MonoBehaviour , IInteractable
 
     public string GetInteractionText()
     {
-        return "Press E to get";
+        return "Press E to Heal";
     }
 
     public void Interact()
