@@ -25,16 +25,14 @@ Material:
     type: 3}
   m_ValidKeywords:
   - _ALPHATEST_ON
-  - _SURFACE_TYPE_TRANSPARENT
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: 2450
   stringTagMap:
-    RenderType: Transparent
-  disabledShaderPasses:
-  - DepthOnly
+    RenderType: TransparentCutout
+  disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -58,10 +56,10 @@ Material:
     - _Cull: 2
     - _Dissolve_Power: 2
     - _Dissolve_Scale: 40
-    - _DstBlend: 1
+    - _DstBlend: 0
     - _Edge_Step: 0.2
     - _Float: 0.2
-    - _Glow_Radius: 0.5
+    - _Glow_Radius: 0.2
     - _Noise: 3
     - _ObjectPos_Speed: 0.1
     - _Object_Position: 1
@@ -69,12 +67,12 @@ Material:
     - _Pos_Divide: 2
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _SrcBlend: 5
-    - _Surface: 1
+    - _SrcBlend: 1
+    - _Surface: 0
     - _ZTest: 4
-    - _ZWrite: 0
+    - _ZWrite: 1
     - _ZWriteControl: 0
     m_Colors:
-    - _Color: {r: 0.09982678, g: 0.29183105, b: 2.1185474, a: 1}
-    - _Edge_Color: {r: 0.2907791, g: 2.4658072, b: 0.7836123, a: 0}
+    - _Color: {r: 0.22934186, g: 0.6880256, b: 4.867144, a: 1}
+    - _Edge_Color: {r: 0.4441776, g: 3.6886053, b: 1.1780362, a: 0}
   m_BuildTextureStacks: []
