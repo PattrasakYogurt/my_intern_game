@@ -49,9 +49,9 @@ Material:
     - _Cull: 0
     - _Dissolve_Power: 0
     - _Dissolve_Scale: 1
-    - _Distortion_Control: 0.034
-    - _Distortion_Power: 2
-    - _Distortion_Scale: 30
+    - _Distortion_Control: 0.067
+    - _Distortion_Power: 3
+    - _Distortion_Scale: 40
     - _DstBlend: 1
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -63,7 +63,7 @@ Material:
     m_Colors:
     - _Dissolve_Speedd: {r: 0, g: 0, b: 0, a: 0}
     - _Distortion_Speed: {r: 0.1, g: 0, b: 0, a: 0}
-    - _Main_Color: {r: 16, g: 16, b: 16, a: 1}
+    - _Main_Color: {r: 8.47419, g: 8.47419, b: 8.47419, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &2159368429150711912
 MonoBehaviour:
