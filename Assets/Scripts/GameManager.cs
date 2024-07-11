@@ -9,7 +9,8 @@ public class GameManager : MonoBehaviour
     public GameObject winUI;
     public GameObject looseUI;
     public GameObject pauseUI;
-    public TextMeshProUGUI timerText;
+    public TextMeshProUGUI timerTextRecord;
+    public SetTimer setTimer;
     public AudioSource main_Music;
     public float timeRemaining;
     public bool isKeyObtainded = false;
@@ -194,5 +195,9 @@ public class GameManager : MonoBehaviour
         DisablePlayer();
         Time.timeScale = 0;
         winUI.SetActive(true);
+        Cursor.lockState= CursorLockMode.None;
+        Cursor.visible = true;
+        timerTextRecord.text = setTimer.timerText.text;
+        playerController.interactionUI.Hide();
     }
 }
