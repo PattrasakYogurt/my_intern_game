@@ -28,7 +28,7 @@ public class RealDoor : MonoBehaviour, IInteractable
         }
         if(GameManager.instance.isKeyObtainded == true)
         {          
-            setTimer.remainingTime += 300f;
+            setTimer.remainingTime += 150f;
             isOpen = !isOpen;
             doorAnimator.SetBool("IsOpen", isOpen);
             doorSound.Play();
