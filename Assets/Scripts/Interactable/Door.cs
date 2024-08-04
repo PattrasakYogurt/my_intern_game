@@ -7,7 +7,13 @@ public class Door : MonoBehaviour, IInteractable
     [SerializeField] private Collider doorWingCollider;
     [SerializeField] private Animator doorAnimator;
     [SerializeField] private AudioSource doorSound;
+    [SerializeField] private ParticleSystem doorParticles;
     private bool _isOpen;
+
+    void Start()
+    {
+        doorParticles.Stop();
+    }
     public string GetInteractionText()
     {
         if(_isOpen)
@@ -25,6 +31,10 @@ public class Door : MonoBehaviour, IInteractable
         _isOpen = !_isOpen;
         doorAnimator.SetBool("IsOpen", _isOpen);
         doorSound.Play();
+        if(_isOpen)
+        {
+            doorParticles.Play();
+        }
         StartCoroutine (DisableDoorCollider());
     }
     IEnumerator DisableDoorCollider()
